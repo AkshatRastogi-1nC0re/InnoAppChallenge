@@ -1,0 +1,158 @@
+{
+  "project_info": {
+    "project_number": "191702198973",
+    "project_id": "orevhealth-499c9",
+    "storage_bucket": "orevhealth-499c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191702198973:android:3b241e28ebd3d49d68e5d4",
+        "android_client_info": {
+          "package_name": "akshatrastogi.grocery_delivery_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191702198973-1iua918m91hiqipm5teemfdi40o8e9nj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVSEyIuliP0s3uj_KuADDdAdeJelmzuzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191702198973-1iua918m91hiqipm5teemfdi40o8e9nj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191702198973:android:d6b73e049c7cbe1568e5d4",
+        "android_client_info": {
+          "package_name": "com.grocery_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191702198973-f0ntunm7qpdrt52sqsj9itc01b2hbkeh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grocery_app",
+            "certificate_hash": "99ea5d0929097944e1912ba154e7b74bb362c707"
+          }
+        },
+        {
+          "client_id": "191702198973-sfnhekv83vfs01limph5dmf2tjrbdiat.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grocery_app",
+            "certificate_hash": "aa94910fa6796a0c001f8d26cb1f0a34e13afa9b"
+          }
+        },
+        {
+          "client_id": "191702198973-1iua918m91hiqipm5teemfdi40o8e9nj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVSEyIuliP0s3uj_KuADDdAdeJelmzuzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191702198973-1iua918m91hiqipm5teemfdi40o8e9nj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191702198973:android:6b55d8c9001481c568e5d4",
+        "android_client_info": {
+          "package_name": "com.grocery_vendor_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191702198973-1iua918m91hiqipm5teemfdi40o8e9nj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVSEyIuliP0s3uj_KuADDdAdeJelmzuzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191702198973-1iua918m91hiqipm5teemfdi40o8e9nj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191702198973:android:b0b90e0bc4d82fb768e5d4",
+        "android_client_info": {
+          "package_name": "com.shoppingapp.orev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191702198973-1ta0cuobr4eou695ba44ctfbdmjkvn1r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shoppingapp.orev",
+            "certificate_hash": "aa94910fa6796a0c001f8d26cb1f0a34e13afa9b"
+          }
+        },
+        {
+          "client_id": "191702198973-hd9253qjrckmujk8kj81ntnojqocpkh0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shoppingapp.orev",
+            "certificate_hash": "99ea5d0929097944e1912ba154e7b74bb362c707"
+          }
+        },
+        {
+          "client_id": "191702198973-1iua918m91hiqipm5teemfdi40o8e9nj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVSEyIuliP0s3uj_KuADDdAdeJelmzuzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191702198973-1iua918m91hiqipm5teemfdi40o8e9nj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
