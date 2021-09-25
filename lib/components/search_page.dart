@@ -3,9 +3,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:orev/components/AlgoliaApplication.dart';
 import 'package:orev/models/Product.dart';
-import 'package:orev/screens/details/details_screen.dart';
-import 'package:orev/screens/home/components/home_header.dart';
-import 'package:orev/screens/searchpage/searchpage.dart';
+
+// import 'package:orev/screens/home/components/home_header.dart';
+// import 'package:orev/screens/searchpage/searchpage.dart';
 import 'package:orev/services/product_services.dart';
 
 import '../constants.dart';
@@ -35,13 +35,13 @@ class _SearchPageState extends State<SearchPage> {
     function(value, boo) {
       setState(() => _searchTerm = value);
       if (boo) {
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => SearchResultsPage(
-                      productList: productList,
-                      title: value,
-                    )));
+        // Navigator.push(
+        //     context,
+        //     MaterialPageRoute(
+        //         builder: (context) => SearchResultsPage(
+        //               productList: productList,
+        //               title: value,
+        //             )));
       }
     }
 
@@ -50,10 +50,10 @@ class _SearchPageState extends State<SearchPage> {
         body: Column(
           children: [
             SizedBox(height: getProportionateScreenHeight(10)),
-            HomeHeader(
-              simplebutton: false,
-              func: function,
-            ),
+            // HomeHeader(
+            //   simplebutton: false,
+            //   func: function,
+            // ),
             SizedBox(height: getProportionateScreenHeight(10)),
             Expanded(
               child: SingleChildScrollView(
@@ -149,11 +149,11 @@ class _DisplaySearchResultState extends State<DisplaySearchResult> {
             Expanded(
               child: GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(
-                    context,
-                    DetailsScreen.routeName,
-                    arguments: ProductDetailsArguments(product: widget.product),
-                  );
+                  // Navigator.pushNamed(
+                  //   context,
+                  //   DetailsScreen.routeName,
+                  //   arguments: ProductDetailsArguments(product: widget.product),
+                  // );
                 },
                 child: Text(
                   widget.title ?? "",

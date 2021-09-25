@@ -70,6 +70,7 @@ dependencies:
   twilio_flutter: ^0.0.9
   path_provider: ^2.0.1
   package_info_plus: ^1.0.6
+#  bordered_text: ^2.0.0
 
 
 dev_dependencies:

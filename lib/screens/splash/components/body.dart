@@ -18,20 +18,16 @@ class _BodyState extends State<Body> {
   int currentPage = 0;
   List<Map<String, String>> splashData = [
     {
-      "text": "Welcome to Orev, Let’s shop!",
-      "image": "assets/images/splash_1.png",
+      "text": "Welcome to Bennett Hub, Let’s be Social!",
+      "image": "assets/images/BenneetHubShy.jpg",
+      "image": "assets/images/BennettHub.png",
       "anim": ""
     },
     {
       "text":
-          "Nature is Organic,We at Orev delivers\n highest quality Organic Products.",
-      "image": "assets/images/splash_2.png",
-      "anim": "assets/animation/splash_2.json"
-    },
-    {
-      "text": "Best Quality Organic Products \nat your doorstep.",
-      "image": "assets/images/splash_3.png",
-      "anim": "assets/animation/splash_3.json"
+          "Feeling shy talking to others Bennett Hub \nwill help you",
+      "image": "assets/images/BenneetHubShy.jpg",
+      "anim": ""
     },
   ];
 
@@ -75,7 +71,9 @@ class _BodyState extends State<Body> {
                     ),
                     Spacer(flex: 3),
                     DefaultButton(
-                      text: "Ready to Explore",
+                      color: Color(0xff212f44),
+                      colour: Colors.white,
+                      text: "Let's make some friends.",
                       press: () {
                         UserSimplePreferences.setFirst("status");
                         Navigator.pushNamed(context, HomeScreen.routeName);

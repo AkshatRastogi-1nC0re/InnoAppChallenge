@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:loading_skeleton/loading_skeleton.dart';
 import 'package:orev/models/Product.dart';
 import 'package:orev/providers/auth_provider.dart';
-import 'package:orev/screens/details/details_screen.dart';
+
 import 'package:orev/screens/sign_in/sign_in_screen.dart';
 import 'package:orev/services/product_services.dart';
 import 'package:orev/services/user_simple_preferences.dart';
@@ -89,11 +89,11 @@ class _ProductCardState extends State<ProductCard> {
       child: SizedBox(
         width: getProportionateScreenWidth(widget.width),
         child: GestureDetector(
-          onTap: () => Navigator.pushNamed(
-            context,
-            DetailsScreen.routeName,
-            arguments: ProductDetailsArguments(product: widget.product),
-          ),
+          // onTap: () => Navigator.pushNamed(
+          //   context,
+          //   DetailsScreen.routeName,
+          //   arguments: ProductDetailsArguments(product: widget.product),
+          // ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:orev/screens/home/components/home_header.dart';
-import 'package:orev/screens/wallet/wallet.dart';
+
+
 
 import '../constants.dart';
 import '../size_config.dart';
@@ -26,7 +26,6 @@ class _AfterOrevWalletState extends State<AfterOrevWallet> {
         child: Column(
           children: [
             SizedBox(height: getProportionateScreenHeight(10)),
-            HomeHeader(),
             SizedBox(height: getProportionateScreenHeight(10)),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
@@ -119,7 +118,7 @@ class _AfterOrevWalletState extends State<AfterOrevWallet> {
                     color: kPrimaryColor2,
                     text: "Move to Wallet",
                     press: () {
-                      Navigator.pushReplacementNamed(context, Wallet.routeName);
+                      // Navigator.pushReplacementNamed(context, Wallet.routeName);
                     },
                   ),
                   SizedBox(

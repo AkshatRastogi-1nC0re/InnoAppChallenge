@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:orev/screens/home/components/home_header.dart';
+
 import 'package:orev/screens/home/home_screen.dart';
-import 'package:orev/screens/your_order/your_order.dart';
+
 
 import '../constants.dart';
 import '../size_config.dart';
@@ -20,7 +20,7 @@ class _QuerySuccessState extends State<QuerySuccess> {
   @override
   void initState() {
     new Future.delayed(const Duration(seconds: 3), () {
-      Navigator.pushReplacementNamed(context, YourOrder.routeName);
+      // Navigator.pushReplacementNamed(context, YourOrder.routeName);
     });
     super.initState();
   }

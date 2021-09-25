@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:orev/screens/home/home_screen.dart';
-import 'package:orev/screens/profile/profile_screen.dart';
+
 import 'package:orev/screens/sign_in/sign_in_screen.dart';
 import 'package:orev/services/user_simple_preferences.dart';
 
 import '../constants.dart';
 import '../enums.dart';
-import 'package:orev/screens/liked_item/like_screen.dart';
+
 
 import '../size_config.dart';
 import 'comingsoonpage.dart';
@@ -87,7 +87,7 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
                     if (authkey == '') {
                       Navigator.pushNamed(context, SignInScreen.routeName);
                     } else {
-                      Navigator.pushNamed(context, LikedScreen.routeName);
+                      // Navigator.pushNamed(context, LikedScreen.routeName);
                     }
                   }
 
@@ -125,7 +125,7 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
 
                     }
                     else{
-                      Navigator.pushNamed(context, ProfileScreen.routeName);
+                      // Navigator.pushNamed(context, ProfileScreen.routeName);
                     }
                   }),
             ],

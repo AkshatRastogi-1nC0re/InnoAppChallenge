@@ -18,10 +18,11 @@ class SplashContent extends StatelessWidget {
       children: <Widget>[
         Spacer(),
         Text(
-          "Orev Health",
+          "Bennett Hub",
           style: TextStyle(
             fontSize: getProportionateScreenWidth(36),
-            color: kPrimaryColor,
+
+            color: Color(0xff212f44),
             fontWeight: FontWeight.bold,
           ),
         ),

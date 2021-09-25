@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:orev/screens/home/components/home_header.dart';
+
 
 import '../enums.dart';
 import '../size_config.dart';
@@ -29,7 +29,6 @@ class _UpdateAvailableState extends State<UpdateAvailable> {
               child: Column(
                 children: [
                   SizedBox(height: getProportionateScreenHeight(10)),
-                  HomeHeader(),
                   SizedBox(height: getProportionateScreenHeight(10)),
                   Container(
                     padding: EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),

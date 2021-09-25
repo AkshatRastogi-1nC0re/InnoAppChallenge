@@ -26,11 +26,13 @@ class _SplashScreenState extends State<SplashScreen> {
     SizeConfig().init(context);
     getFirst = UserSimplePreferences.getFirst() ?? '';
     return AnimatedSplashScreen(
+      backgroundColor: Color(0xffffefc5),
         duration: 1,
-        splashIconSize: getProportionateScreenWidth(150),
-        splash: 'assets/images/splash_1.png',
+        splashIconSize: getProportionateScreenWidth(280),
+        splash: 'assets/images/BennettHub.png',
         nextScreen: (getFirst == '')
             ? Scaffold(
+          backgroundColor: Color(0xffffefc5),
                 body: Body(),
               )
             : HomeScreen()

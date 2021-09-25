@@ -5,7 +5,7 @@ import 'package:loading_skeleton/loading_skeleton.dart';
 import 'package:orev/components/default_button.dart';
 import 'package:orev/models/Product.dart';
 import 'package:orev/providers/auth_provider.dart';
-import 'package:orev/screens/details/details_screen.dart';
+
 import 'package:orev/screens/sign_in/sign_in_screen.dart';
 import 'package:orev/services/product_services.dart';
 import 'package:orev/services/user_simple_preferences.dart';
@@ -163,11 +163,11 @@ class _FullWidthProductCardState extends State<FullWidthProductCard> {
                         kSecondaryColor.withOpacity(0.1), // red as border color
                   )),
               child: GestureDetector(
-                onTap: () => Navigator.pushNamed(
-                  context,
-                  DetailsScreen.routeName,
-                  arguments: ProductDetailsArguments(product: widget.product),
-                ),
+                // onTap: () => Navigator.pushNamed(
+                //   context,
+                //   DetailsScreen.routeName,
+                //   arguments: ProductDetailsArguments(product: widget.product),
+                // ),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   // crossAxisAlignment: CrossAxisAlignment.start,
