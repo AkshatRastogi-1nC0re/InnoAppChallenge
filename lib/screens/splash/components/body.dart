@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:socialbennett/screens/sign_in/sign_in_screen.dart';
 import 'package:socialbennett/constants.dart';
 import 'package:socialbennett/screens/home/home_screen.dart';
 import 'package:socialbennett/screens/sign_in/sign_in_screen.dart';
@@ -75,7 +76,7 @@ class _BodyState extends State<Body> {
                       text: "Let's make some friends.",
                       press: () {
                         UserSimplePreferences.setFirst("status");
-                        Navigator.pushNamed(context, HomeScreen.routeName);
+                        Navigator.pushNamed(context, SignInScreen.routeName);
                       },
                     ),
                     Spacer(),
