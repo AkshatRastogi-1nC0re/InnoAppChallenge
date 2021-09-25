@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:orev/constants.dart';
-import 'package:orev/size_config.dart';
+import 'package:socialbennett/constants.dart';
+import 'package:socialbennett/size_config.dart';
 
 import 'otp_form.dart';
 

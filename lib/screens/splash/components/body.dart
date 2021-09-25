@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:orev/constants.dart';
-import 'package:orev/screens/home/home_screen.dart';
-import 'package:orev/screens/sign_in/sign_in_screen.dart';
-import 'package:orev/services/user_simple_preferences.dart';
-import 'package:orev/size_config.dart';
+import 'package:socialbennett/constants.dart';
+import 'package:socialbennett/screens/home/home_screen.dart';
+import 'package:socialbennett/screens/sign_in/sign_in_screen.dart';
+import 'package:socialbennett/services/user_simple_preferences.dart';
+import 'package:socialbennett/size_config.dart';
 
 // This is the best practice
 import '../components/splash_content.dart';
@@ -24,8 +24,7 @@ class _BodyState extends State<Body> {
       "anim": ""
     },
     {
-      "text":
-          "Feeling shy talking to others Bennett Hub \nwill help you",
+      "text": "Feeling shy talking to others Bennett Hub \nwill help you",
       "image": "assets/images/BenneetHubShy.jpg",
       "anim": ""
     },

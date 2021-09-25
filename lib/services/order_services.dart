@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:geocoding/geocoding.dart';
-import 'package:orev/models/Product.dart';
-import 'package:orev/models/Varient.dart';
+import 'package:socialbennett/models/Product.dart';
+import 'package:socialbennett/models/Varient.dart';
 
 class OrderServices {
   CollectionReference orders = FirebaseFirestore.instance.collection('orders');

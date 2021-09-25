@@ -1,11 +1,11 @@
 import 'package:flutter/widgets.dart';
-import 'package:orev/screens/forgot_password/forgot_password_screen.dart';
-import 'package:orev/screens/forgot_password/update_password_screen.dart';
-import 'package:orev/screens/home/home_screen.dart';
-import 'package:orev/screens/login_success/login_success_screen.dart';
-import 'package:orev/screens/otp/otp_screen.dart';
-import 'package:orev/screens/sign_in/sign_in_screen.dart';
-import 'package:orev/screens/splash/splash_screen.dart';
+import 'package:socialbennett/screens/forgot_password/forgot_password_screen.dart';
+import 'package:socialbennett/screens/forgot_password/update_password_screen.dart';
+import 'package:socialbennett/screens/home/home_screen.dart';
+import 'package:socialbennett/screens/login_success/login_success_screen.dart';
+import 'package:socialbennett/screens/otp/otp_screen.dart';
+import 'package:socialbennett/screens/sign_in/sign_in_screen.dart';
+import 'package:socialbennett/screens/splash/splash_screen.dart';
 import 'screens/sign_up/sign_up_screen.dart';
 
 // We use name route

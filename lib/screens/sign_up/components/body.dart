@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:orev/components/socal_card.dart';
-import 'package:orev/constants.dart';
-import 'package:orev/size_config.dart';
+import 'package:socialbennett/components/socal_card.dart';
+import 'package:socialbennett/constants.dart';
+import 'package:socialbennett/size_config.dart';
 
 import 'sign_up_form.dart';
 

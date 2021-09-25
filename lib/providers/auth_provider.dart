@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:orev/services/user_services.dart';
+import 'package:socialbennett/services/user_services.dart';
 
 class AuthProvider with ChangeNotifier {
   FirebaseAuth _auth = FirebaseAuth.instance;

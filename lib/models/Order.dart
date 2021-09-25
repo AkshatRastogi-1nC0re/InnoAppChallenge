@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:orev/models/OrderProduct.dart';
+import 'package:socialbennett/models/OrderProduct.dart';
 
 import 'Product.dart';
 

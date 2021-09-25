@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:menu_button/menu_button.dart';
-import 'package:orev/components/querysuccess.dart';
-import 'package:orev/services/order_services.dart';
-import 'package:orev/services/product_services.dart';
+import 'package:socialbennett/components/querysuccess.dart';
+import 'package:socialbennett/services/order_services.dart';
+import 'package:socialbennett/services/product_services.dart';
 import 'package:rounded_loading_button/rounded_loading_button.dart';
 
 import '../constants.dart';

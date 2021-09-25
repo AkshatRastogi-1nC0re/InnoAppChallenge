@@ -1,15 +1,15 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:orev/components/custom_surfix_icon.dart';
-import 'package:orev/components/form_error.dart';
-import 'package:orev/helper/keyboard.dart';
-import 'package:orev/providers/auth_provider.dart';
-import 'package:orev/screens/forgot_password/forgot_password_screen.dart';
-import 'package:orev/screens/login_success/login_success_screen.dart';
+import 'package:socialbennett/components/custom_surfix_icon.dart';
+import 'package:socialbennett/components/form_error.dart';
+import 'package:socialbennett/helper/keyboard.dart';
+import 'package:socialbennett/providers/auth_provider.dart';
+import 'package:socialbennett/screens/forgot_password/forgot_password_screen.dart';
+import 'package:socialbennett/screens/login_success/login_success_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:orev/services/user_services.dart';
-import 'package:orev/services/user_simple_preferences.dart';
+import 'package:socialbennett/services/user_services.dart';
+import 'package:socialbennett/services/user_simple_preferences.dart';
 
 import '../../../components/default_button.dart';
 import '../../../constants.dart';
@@ -121,7 +121,6 @@ class _SignFormState extends State<SignForm> {
                   String emailuid = _auth.user.uid;
                   UserSimplePreferences.setAuthKey(emailuid);
                   Navigator.pushNamed(context, LoginSuccessScreen.routeName);
-
                 } catch (e) {
                   _btnController.error();
                   if (e.code == 'user-not-found') {
