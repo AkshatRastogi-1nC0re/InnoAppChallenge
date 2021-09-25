@@ -6,20 +6,19 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:hawk_fab_menu/hawk_fab_menu.dart';
 import 'package:socialbennett/components/coustom_bottom_nav_bar.dart';
 import 'package:socialbennett/components/updateavailablescreen.dart';
-import 'package:socialbennett/enums.dart';
 import 'package:socialbennett/services/product_services.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
 import '../../constants.dart';
 import 'components/body.dart';
 
-class HomeScreen extends StatefulWidget {
+class DetailScreen extends StatefulWidget {
   static String routeName = "/home";
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _DetailScreenState createState() => _DetailScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _DetailScreenState extends State<DetailScreen> {
   bool firsttime = false;
   bool maintenance = false;
   bool updateAvailable = false;
@@ -42,18 +41,18 @@ class _HomeScreenState extends State<HomeScreen> {
         context,
         MaterialPageRoute(
             builder: (context) => UpdateAvailable(
-                  value: "Download Now",
-                  bottomNavigation: false,
-                )),
+              value: "Download Now",
+              bottomNavigation: false,
+            )),
       );
     } else if (maintenance) {
       Navigator.push(
         context,
         MaterialPageRoute(
             builder: (context) => UpdateAvailable(
-                  value: "Come Back Soon",
-                  bottomNavigation: false,
-                )),
+              value: "Come Back Soon",
+              bottomNavigation: false,
+            )),
       );
     }
   }
@@ -89,53 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
       },
       child: SafeArea(
         child: Scaffold(
-          body: Builder(
-            // builder is used only for the snackbar, if you don't want the snackbar you can remove
-            // Builder from the tree
-            builder: (BuildContext context) => HawkFabMenu(
-              icon: AnimatedIcons.menu_arrow,
-              fabColor: Colors.transparent,
-              iconColor: Colors.green,
-              items: [
-                HawkFabMenuItem(
-                  label: 'Menu 1',
-                  ontap: () {
-                    Scaffold.of(context)..hideCurrentSnackBar();
-                    Scaffold.of(context).showSnackBar(
-                      SnackBar(content: Text('Menu 1 selected')),
-                    );
-                  },
-                  icon: Icon(Icons.home),
-                  color: Colors.red,
-                  labelColor: Colors.blue,
-                ),
-                HawkFabMenuItem(
-                  label: 'Menu 2',
-                  ontap: () {
-                    Scaffold.of(context)..hideCurrentSnackBar();
-                    Scaffold.of(context).showSnackBar(
-                      SnackBar(content: Text('Menu 2 selected')),
-                    );
-                  },
-                  icon: Icon(Icons.comment),
-                  labelColor: Colors.white,
-                  labelBackgroundColor: Colors.blue,
-                ),
-                HawkFabMenuItem(
-                  label: 'Menu 3 (default)',
-                  ontap: () {
-                    Scaffold.of(context)..hideCurrentSnackBar();
-                    Scaffold.of(context).showSnackBar(
-                      SnackBar(content: Text('Menu 3 selected')),
-                    );
-                  },
-                  icon: Icon(Icons.add_a_photo),
-                ),
-              ],
-              body: Body(),
-            ),
-          ),
-          bottomNavigationBar: CustomBottomNavBar(selectedMenu: MenuState.home),
+          body: Body(),
         ),
       ),
     );
