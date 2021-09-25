@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:card_swiper/card_swiper.dart';
-import 'package:orev/size_config.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import '../../../size_config.dart';
 
 class Body extends StatefulWidget {
   @override
@@ -18,7 +20,7 @@ class _BodyState extends State<Body> {
           color: Color(0xff212f44),
               child: Row(
                 children: [
-                  
+                  FaIcon(FontAwesomeIcons.hamburger),
                   Text(
                     "Hello, Aryan",
                     style: TextStyle(

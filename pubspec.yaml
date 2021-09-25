@@ -71,6 +71,7 @@ dependencies:
   path_provider: ^2.0.1
   package_info_plus: ^1.0.6
   card_swiper : ^1.0.4
+  font_awesome_flutter:
 #  bordered_text: ^2.0.0
 
 
