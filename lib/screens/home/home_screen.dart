@@ -1,3 +1,4 @@
+import 'package:card_swiper/card_swiper.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -85,10 +86,14 @@ class _HomeScreenState extends State<HomeScreen> {
         SystemNavigator.pop();
         return false;
       },
-      child: Scaffold(
-        body: Body(),
-        bottomNavigationBar: CustomBottomNavBar(selectedMenu: MenuState.home),
+      child: SafeArea(
+        child: Scaffold(
+          body: Body(),
+          bottomNavigationBar: CustomBottomNavBar(selectedMenu: MenuState.home),
+        ),
       ),
     );
   }
 }
+
+

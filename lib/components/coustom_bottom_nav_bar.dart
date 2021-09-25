@@ -37,7 +37,7 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
     return Container(
       padding: EdgeInsets.symmetric(vertical: getProportionateScreenHeight(14)),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Color(0xff212f44),
         boxShadow: [
           BoxShadow(
             offset: Offset(0, -15),
