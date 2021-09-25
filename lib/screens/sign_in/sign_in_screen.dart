@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:socialbennett/constants.dart';
+import 'package:socialbennett/constants.dart';
 
 import '../../size_config.dart';
 import 'components/body.dart';
@@ -41,10 +42,13 @@ class _SignInScreenState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: kPrimaryColor3,
       appBar: AppBar(
+        backgroundColor: kPrimaryColor3,
         title: Text(
           "Sign In",
           style: TextStyle(
+            color: kPrimaryTextColor,
             fontSize: getProportionateScreenWidth(18),
           ),
         ),

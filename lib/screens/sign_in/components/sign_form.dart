@@ -66,7 +66,7 @@ class _SignFormState extends State<SignForm> {
                 scale: getProportionateScreenHeight(1.1),
                 child: Checkbox(
                   value: remember,
-                  activeColor: kPrimaryColor,
+                  activeColor: kPrimaryTextColor,
                   onChanged: (value) {
                     setState(() {
                       remember = value;
@@ -85,6 +85,7 @@ class _SignFormState extends State<SignForm> {
                 child: Text(
                   "Forgot Password",
                   style: TextStyle(
+                      color: kPrimaryTextColor,
                       decoration: TextDecoration.underline,
                       fontSize: getProportionateScreenWidth(13)),
                 ),
@@ -98,7 +99,7 @@ class _SignFormState extends State<SignForm> {
             duration: Duration(milliseconds: 1300),
             width: getProportionateScreenWidth(500),
             height: getProportionateScreenHeight(56),
-            color: kPrimaryColor,
+            color: kPrimaryTextColor,
             child: Text(" Continue ",
                 style: TextStyle(
                     fontSize: getProportionateScreenWidth(18),
