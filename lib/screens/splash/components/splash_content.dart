@@ -21,7 +21,6 @@ class SplashContent extends StatelessWidget {
           "Bennett Hub",
           style: TextStyle(
             fontSize: getProportionateScreenWidth(36),
-
             color: Color(0xff212f44),
             fontWeight: FontWeight.bold,
           ),

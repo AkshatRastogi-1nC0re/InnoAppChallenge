@@ -88,7 +88,6 @@ class _HomeScreenState extends State<HomeScreen> {
       },
       child: SafeArea(
         child: Scaffold(
-          backgroundColor: Color(0xffffefc5),
           body: Body(),
           bottomNavigationBar: CustomBottomNavBar(selectedMenu: MenuState.home),
         ),
@@ -96,3 +95,5 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
+
