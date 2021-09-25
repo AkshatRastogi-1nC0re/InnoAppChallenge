@@ -134,7 +134,7 @@ class _SignUpFormState extends State<SignUpForm> with ChangeNotifier {
     }
 
     final BoxDecoration pinPutDecoration = BoxDecoration(
-      color: kPrimaryColor,
+      color: kPrimaryTextColor,
       borderRadius: BorderRadius.circular(5.0),
     );
     Widget boxedPinPutWithPreFilledSymbol() {
@@ -170,7 +170,7 @@ class _SignUpFormState extends State<SignUpForm> with ChangeNotifier {
           controller: _pinPutController,
           submittedFieldDecoration: pinPutDecoration,
           selectedFieldDecoration:
-              pinPutDecoration.copyWith(color: Colors.lightGreen),
+              pinPutDecoration.copyWith(color: Colors.indigo),
           followingFieldDecoration: pinPutDecoration,
         ),
       );
@@ -178,6 +178,7 @@ class _SignUpFormState extends State<SignUpForm> with ChangeNotifier {
 
     void _showDialog() {
       slideDialog.showSlideDialog(
+          backgroundColor: Color(0xffffefc6),
           context: context,
           child: Expanded(
             child: ScrollConfiguration(
@@ -240,7 +241,7 @@ class _SignUpFormState extends State<SignUpForm> with ChangeNotifier {
             duration: Duration(milliseconds: 1300),
             width: getProportionateScreenWidth(500),
             height: getProportionateScreenHeight(56),
-            color: kPrimaryColor,
+            color: kPrimaryTextColor,
             child: Text(" Continue ",
                 style: TextStyle(
                     fontSize: getProportionateScreenWidth(18),
