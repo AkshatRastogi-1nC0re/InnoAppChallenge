@@ -242,182 +242,131 @@ class _BodyState extends State<Body> {
                     ),
 
                     Container(
-                      height: 1000,
+                      height: 600,
                       width: getProportionateScreenWidth(320),
                       padding: const EdgeInsets.all(4.0),
                       child: StaggeredGridView.countBuilder(
                         physics: NeverScrollableScrollPhysics(),
                         crossAxisCount: 4,
-                        itemCount: 30,
+                        itemCount: 6,
                         itemBuilder: (BuildContext context, int index) => new Container(
                           child: FlipCard(
                             direction: FlipDirection.HORIZONTAL, // default
-                            front:Container(
-                              child: Stack(
-                                children: [
-                                  index%2==0?Align(
-                                    alignment: Alignment.bottomCenter,
-                                    child: Container(
-                                      height: getProportionateScreenHeight(60),
-                                      width: double.maxFinite,
-                                      color: Colors.black.withOpacity(0.7),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.min,
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          SizedBox(height: getProportionateScreenHeight(5),),
-                                          Center(
-                                            child: Text(
-                                              "Yash Sharma",
-                                              style: TextStyle(
-                                                fontSize: getProportionateScreenWidth(15),
-                                                color: Colors.white,
-                                                fontWeight: FontWeight.w800,
+                            front:ClipRRect(
+                              borderRadius: BorderRadius.circular(10.0),
+                              child: Container(
+                                child: Stack(
+                                  children: [
+                                    index%2==0?Align(
+                                      alignment: Alignment.bottomCenter,
+                                      child: Container(
+                                        height: getProportionateScreenHeight(60),
+                                        width: double.maxFinite,
+                                        color: Colors.black.withOpacity(0.7),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.min,
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            SizedBox(height: getProportionateScreenHeight(5),),
+                                            Center(
+                                              child: Text(
+                                                "Yash Sharma",
+                                                style: TextStyle(
+                                                  fontSize: getProportionateScreenWidth(15),
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.w800,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                          Center(
-                                            child: Text(
-                                              "CSE,2024",
-                                              style: TextStyle(
-                                                fontSize: getProportionateScreenWidth(12),
-                                                color: Colors.white,
-                                                fontWeight: FontWeight.w500,
+                                            Center(
+                                              child: Text(
+                                                "CSE,2024",
+                                                style: TextStyle(
+                                                  fontSize: getProportionateScreenWidth(12),
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.w500,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
-                                    ),
-                                  ):Center(),
-                                  Container(
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(10.0),
+                                    ):Center(),
+                                    Container(
                                       child: Image.network(
                                         "https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg",
                                         fit: BoxFit.fill,
                                       ),
                                     ),
-                                  ),
-                                  index%2!=0?Align(
-                                    alignment: Alignment.bottomCenter,
-                                    child: Container(
-                                      height: getProportionateScreenHeight(55),
-                                      width: double.maxFinite,
-                                      color: Colors.white.withOpacity(0.7),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.min,
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Center(
-                                            child: Text(
-                                              "Yash Sharma",
-                                              style: TextStyle(
-                                                fontSize: getProportionateScreenWidth(15),
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.w800,
+                                    index%2!=0?Align(
+                                      alignment: Alignment.bottomCenter,
+                                      child: Container(
+                                        height: getProportionateScreenHeight(55),
+                                        width: double.maxFinite,
+                                        color: Colors.white.withOpacity(0.7),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.min,
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Center(
+                                              child: Text(
+                                                "Yash Sharma",
+                                                style: TextStyle(
+                                                  fontSize: getProportionateScreenWidth(15),
+                                                  color: Colors.black,
+                                                  fontWeight: FontWeight.w800,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                          Center(
-                                            child: Text(
-                                              "CSE,2024",
-                                              style: TextStyle(
-                                                fontSize: getProportionateScreenWidth(12),
-                                                color: index%2==0?Colors.white:Colors.black,
-                                                fontWeight: FontWeight.w500,
+                                            Center(
+                                              child: Text(
+                                                "CSE,2024",
+                                                style: TextStyle(
+                                                  fontSize: getProportionateScreenWidth(12),
+                                                  color: index%2==0?Colors.white:Colors.black,
+                                                  fontWeight: FontWeight.w500,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
-                                    ),
-                                  ):Center(),
-                                ],
+                                    ):Center(),
+                                  ],
+                                ),
                               ),
                             ),
-                            back: Container(
-                              child: Stack(
-                                children: [
-                                  index%2==0?Align(
-                                    alignment: Alignment.bottomCenter,
-                                    child: Container(
-                                      height: getProportionateScreenHeight(60),
-                                      width: double.maxFinite,
-                                      color: Colors.black.withOpacity(0.7),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.min,
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          SizedBox(height: getProportionateScreenHeight(5),),
-                                          Center(
-                                            child: Text(
-                                              "Yash Sharma",
-                                              style: TextStyle(
-                                                fontSize: getProportionateScreenWidth(15),
-                                                color: Colors.white,
-                                                fontWeight: FontWeight.w800,
-                                              ),
-                                            ),
-                                          ),
-                                          Center(
-                                            child: Text(
-                                              "CSE,2024",
-                                              style: TextStyle(
-                                                fontSize: getProportionateScreenWidth(12),
-                                                color: Colors.white,
-                                                fontWeight: FontWeight.w500,
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ):Center(),
-                                  Container(
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(10.0),
-                                      child: Image.network(
-                                        "https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg",
-                                        fit: BoxFit.fill,
-                                      ),
-                                    ),
+                            back: ClipRRect(
+                              borderRadius: BorderRadius.circular(10.0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Color(0xffffefc5),
+                                  image: DecorationImage(
+                                      image: new AssetImage('assets/images/lightlogo.png'),
                                   ),
-                                  index%2!=0?Align(
-                                    alignment: Alignment.bottomCenter,
-                                    child: Container(
-                                      height: getProportionateScreenHeight(55),
-                                      width: double.maxFinite,
-                                      color: Colors.white.withOpacity(0.7),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.min,
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Center(
-                                            child: Text(
-                                              "Yash Sharma",
-                                              style: TextStyle(
-                                                fontSize: getProportionateScreenWidth(15),
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.w800,
-                                              ),
-                                            ),
-                                          ),
-                                          Center(
-                                            child: Text(
-                                              "CSE,2024",
-                                              style: TextStyle(
-                                                fontSize: getProportionateScreenWidth(12),
-                                                color: index%2==0?Colors.white:Colors.black,
-                                                fontWeight: FontWeight.w500,
-                                              ),
-                                            ),
-                                          ),
-                                        ],
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsets.only(top: getProportionateScreenHeight(15)),
+                                      child: Text(
+                                        "Lorem ipsum dolor sit amet coonsequuntur voluptatum laboruuas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga? ",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(color: Colors.black,fontSize: getProportionateScreenWidth(12)),
                                       ),
                                     ),
-                                  ):Center(),
-                                ],
+                                    GestureDetector(
+                                      onTap: (){
+                                        print("gfffdfdd");
+                                      },
+                                      child: Align(
+                                        alignment: Alignment.bottomRight,
+                                        child: Text("See More",style: TextStyle(color: Colors.blue),),
+                                      ),
+                                    )
+                                  ],
+                                )
                               ),
                             ),
                           ),
