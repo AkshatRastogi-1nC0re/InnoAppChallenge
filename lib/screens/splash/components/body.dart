@@ -20,13 +20,17 @@ class _BodyState extends State<Body> {
   List<Map<String, String>> splashData = [
     {
       "text": "Welcome to Bennett Hub, Let’s be Social!",
-      "image": "assets/images/BenneetHubShy.jpg",
-      "image": "assets/images/BennettHub.png",
+      "image": "assets/images/init1.png",
       "anim": ""
     },
     {
       "text": "Feeling shy talking to others Bennett Hub \nwill help you",
-      "image": "assets/images/BenneetHubShy.jpg",
+      "image": "assets/images/init2.png",
+      "anim": ""
+    },
+    {
+      "text": "Find the right people for you at Bennett",
+      "image": "assets/images/init3.png",
       "anim": ""
     },
   ];
@@ -70,14 +74,27 @@ class _BodyState extends State<Body> {
                       ),
                     ),
                     Spacer(flex: 3),
-                    DefaultButton(
-                      color: Color(0xff212f44),
-                      colour: Colors.white,
-                      text: "Let's make some friends.",
-                      press: () {
-                        UserSimplePreferences.setFirst("status");
-                        Navigator.pushNamed(context, SignInScreen.routeName);
-                      },
+                    Row(
+                      children: [
+                        DefaultButton(
+                          color: Color(0xff212f44),
+                          colour: Colors.white,
+                          text: "Let's make some friends  ->",
+                          press: () {
+                            UserSimplePreferences.setFirst("status");
+                            Navigator.pushNamed(
+                                context, SignInScreen.routeName);
+                          },
+                        ),
+                        Icon(
+                          Icons.arrow_forward_ios_rounded,
+                          color: Colors.white,
+                          size: 40.0,
+                          textDirection: TextDirection.ltr,
+                          semanticLabel:
+                              'Icon', // Announced in accessibility modes (e.g TalkBack/VoiceOver). This label does not show in the UI.
+                        ),
+                      ],
                     ),
                     Spacer(),
                   ],
