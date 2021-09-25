@@ -1,13 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:orev/components/custom_surfix_icon.dart';
-import 'package:orev/components/default_button.dart';
-import 'package:orev/components/form_error.dart';
-import 'package:orev/providers/auth_provider.dart';
-import 'package:orev/screens/home/home_screen.dart';
-import 'package:orev/services/product_services.dart';
-import 'package:orev/services/user_services.dart';
-import 'package:orev/services/user_simple_preferences.dart';
+import 'package:socialbennett/components/custom_surfix_icon.dart';
+import 'package:socialbennett/components/default_button.dart';
+import 'package:socialbennett/components/form_error.dart';
+import 'package:socialbennett/providers/auth_provider.dart';
+import 'package:socialbennett/screens/home/home_screen.dart';
+import 'package:socialbennett/services/product_services.dart';
+import 'package:socialbennett/services/user_services.dart';
+import 'package:socialbennett/services/user_simple_preferences.dart';
 import 'package:rounded_loading_button/rounded_loading_button.dart';
 import '../../../constants.dart';
 import '../../../size_config.dart';
@@ -134,7 +134,7 @@ class _SignUpFormState extends State<SignUpForm> with ChangeNotifier {
     }
 
     final BoxDecoration pinPutDecoration = BoxDecoration(
-      color: kPrimaryColor,
+      color: kPrimaryTextColor,
       borderRadius: BorderRadius.circular(5.0),
     );
     Widget boxedPinPutWithPreFilledSymbol() {
@@ -170,7 +170,7 @@ class _SignUpFormState extends State<SignUpForm> with ChangeNotifier {
           controller: _pinPutController,
           submittedFieldDecoration: pinPutDecoration,
           selectedFieldDecoration:
-              pinPutDecoration.copyWith(color: Colors.lightGreen),
+              pinPutDecoration.copyWith(color: Colors.indigo),
           followingFieldDecoration: pinPutDecoration,
         ),
       );
@@ -178,6 +178,7 @@ class _SignUpFormState extends State<SignUpForm> with ChangeNotifier {
 
     void _showDialog() {
       slideDialog.showSlideDialog(
+          backgroundColor: Color(0xffffefc6),
           context: context,
           child: Expanded(
             child: ScrollConfiguration(
@@ -240,7 +241,7 @@ class _SignUpFormState extends State<SignUpForm> with ChangeNotifier {
             duration: Duration(milliseconds: 1300),
             width: getProportionateScreenWidth(500),
             height: getProportionateScreenHeight(56),
-            color: kPrimaryColor,
+            color: kPrimaryTextColor,
             child: Text(" Continue ",
                 style: TextStyle(
                     fontSize: getProportionateScreenWidth(18),

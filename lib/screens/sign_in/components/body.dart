@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:orev/components/no_account_text.dart';
+import 'package:socialbennett/constants.dart';
+import 'package:socialbennett/components/no_account_text.dart';
 import '../../../size_config.dart';
 import 'sign_form.dart';
 
 class Body extends StatelessWidget {
-
   @override
-
   Widget build(BuildContext context) {
     return SafeArea(
       child: SizedBox(
@@ -21,7 +20,7 @@ class Body extends StatelessWidget {
                 Text(
                   "Welcome Back",
                   style: TextStyle(
-                    color: Colors.black,
+                    color: kPrimaryTextColor,
                     fontSize: getProportionateScreenWidth(27),
                     fontWeight: FontWeight.bold,
                   ),

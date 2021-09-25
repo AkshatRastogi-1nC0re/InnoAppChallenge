@@ -1,12 +1,12 @@
 import 'package:algolia/algolia.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:orev/components/AlgoliaApplication.dart';
-import 'package:orev/models/Product.dart';
+import 'package:socialbennett/components/AlgoliaApplication.dart';
+import 'package:socialbennett/models/Product.dart';
 
 // import 'package:orev/screens/home/components/home_header.dart';
 // import 'package:orev/screens/searchpage/searchpage.dart';
-import 'package:orev/services/product_services.dart';
+import 'package:socialbennett/services/product_services.dart';
 
 import '../constants.dart';
 import '../size_config.dart';

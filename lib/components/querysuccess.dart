@@ -2,8 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-import 'package:orev/screens/home/home_screen.dart';
-
+import 'package:socialbennett/screens/home/home_screen.dart';
 
 import '../constants.dart';
 import '../size_config.dart';

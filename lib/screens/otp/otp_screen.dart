@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:orev/size_config.dart';
+import 'package:socialbennett/size_config.dart';
 
 import 'components/body.dart';
 

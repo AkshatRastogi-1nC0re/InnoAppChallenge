@@ -2,12 +2,12 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:loading_skeleton/loading_skeleton.dart';
-import 'package:orev/models/Product.dart';
-import 'package:orev/providers/auth_provider.dart';
+import 'package:socialbennett/models/Product.dart';
+import 'package:socialbennett/providers/auth_provider.dart';
 
-import 'package:orev/screens/sign_in/sign_in_screen.dart';
-import 'package:orev/services/product_services.dart';
-import 'package:orev/services/user_simple_preferences.dart';
+import 'package:socialbennett/screens/sign_in/sign_in_screen.dart';
+import 'package:socialbennett/services/product_services.dart';
+import 'package:socialbennett/services/user_simple_preferences.dart';
 
 import '../constants.dart';
 import '../size_config.dart';

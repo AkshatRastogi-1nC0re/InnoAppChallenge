@@ -1,4 +1,4 @@
-package com.shoppingapp.orev
+package com.async.socialbennett
 
 import io.flutter.embedding.android.FlutterActivity
 

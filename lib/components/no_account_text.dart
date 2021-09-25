@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:orev/screens/sign_up/sign_up_screen.dart';
+import 'package:socialbennett/screens/sign_up/sign_up_screen.dart';
 
 import '../constants.dart';
 import '../size_config.dart';
@@ -24,7 +24,7 @@ class NoAccountText extends StatelessWidget {
             "Sign Up",
             style: TextStyle(
                 fontSize: getProportionateScreenWidth(15),
-                color: kPrimaryColor),
+                color: kPrimaryTextColor),
           ),
         ),
       ],

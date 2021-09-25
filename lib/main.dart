@@ -2,11 +2,11 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:orev/providers/auth_provider.dart';
-import 'package:orev/routes.dart';
-import 'package:orev/screens/splash/splash_screen.dart';
-import 'package:orev/services/user_simple_preferences.dart';
-import 'package:orev/theme.dart';
+import 'package:socialbennett/providers/auth_provider.dart';
+import 'package:socialbennett/routes.dart';
+import 'package:socialbennett/screens/splash/splash_screen.dart';
+import 'package:socialbennett/services/user_simple_preferences.dart';
+import 'package:socialbennett/theme.dart';
 import 'package:provider/provider.dart';
 
 void main() async {

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:orev/size_config.dart';
+import 'package:socialbennett/size_config.dart';
 
 const kPrimaryColor = Color(0xff59b24d);
 const kPrimaryColor2 = Color(0xff3bd80d);
 const kPrimaryColor3 = Color(0xfff8e1a9);
+const kPrimaryTextColor = Color(0xff212f44);
 const kPrimaryColor4 = Color(0xfff3c13d);
+const kBackgroundColor = Color(0xffededed);
 const kPrimaryLightColor = Color(0xFFFFECDF);
 const kPrimaryGradientColor = LinearGradient(
   begin: Alignment.topLeft,

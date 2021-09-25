@@ -2,7 +2,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:orev/services/product_services.dart';
+import 'package:socialbennett/services/product_services.dart';
 
 class UserServices {
   String collection = 'users';

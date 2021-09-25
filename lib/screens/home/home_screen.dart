@@ -3,10 +3,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:orev/components/coustom_bottom_nav_bar.dart';
-import 'package:orev/components/updateavailablescreen.dart';
-import 'package:orev/enums.dart';
-import 'package:orev/services/product_services.dart';
+import 'package:socialbennett/components/coustom_bottom_nav_bar.dart';
+import 'package:socialbennett/components/updateavailablescreen.dart';
+import 'package:socialbennett/enums.dart';
+import 'package:socialbennett/services/product_services.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
 import '../../constants.dart';

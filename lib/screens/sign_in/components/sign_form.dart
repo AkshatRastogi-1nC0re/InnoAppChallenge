@@ -1,15 +1,16 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:orev/components/custom_surfix_icon.dart';
-import 'package:orev/components/form_error.dart';
-import 'package:orev/helper/keyboard.dart';
-import 'package:orev/providers/auth_provider.dart';
-import 'package:orev/screens/forgot_password/forgot_password_screen.dart';
-import 'package:orev/screens/login_success/login_success_screen.dart';
+import 'package:socialbennett/components/custom_surfix_icon.dart';
+import 'package:socialbennett/components/form_error.dart';
+import 'package:socialbennett/helper/keyboard.dart';
+import 'package:socialbennett/providers/auth_provider.dart';
+import 'package:socialbennett/screens/forgot_password/forgot_password_screen.dart';
+import 'package:socialbennett/screens/home/home_screen.dart';
+import 'package:socialbennett/screens/login_success/login_success_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:orev/services/user_services.dart';
-import 'package:orev/services/user_simple_preferences.dart';
+import 'package:socialbennett/services/user_services.dart';
+import 'package:socialbennett/services/user_simple_preferences.dart';
 
 import '../../../components/default_button.dart';
 import '../../../constants.dart';
@@ -66,7 +67,7 @@ class _SignFormState extends State<SignForm> {
                 scale: getProportionateScreenHeight(1.1),
                 child: Checkbox(
                   value: remember,
-                  activeColor: kPrimaryColor,
+                  activeColor: kPrimaryTextColor,
                   onChanged: (value) {
                     setState(() {
                       remember = value;
@@ -85,6 +86,7 @@ class _SignFormState extends State<SignForm> {
                 child: Text(
                   "Forgot Password",
                   style: TextStyle(
+                      color: kPrimaryTextColor,
                       decoration: TextDecoration.underline,
                       fontSize: getProportionateScreenWidth(13)),
                 ),
@@ -98,7 +100,7 @@ class _SignFormState extends State<SignForm> {
             duration: Duration(milliseconds: 1300),
             width: getProportionateScreenWidth(500),
             height: getProportionateScreenHeight(56),
-            color: kPrimaryColor,
+            color: kPrimaryTextColor,
             child: Text(" Continue ",
                 style: TextStyle(
                     fontSize: getProportionateScreenWidth(18),
@@ -110,42 +112,43 @@ class _SignFormState extends State<SignForm> {
               if (_formKey.currentState.validate()) {
                 _formKey.currentState.save();
                 KeyboardUtil.hideKeyboard(context);
-                try {
-                  await _auth.signIn(
-                    email: number + "@orev.user",
-                    password: password,
-                  );
-                  if (_auth.firebaseAuthException != null) {
-                    throw (_auth.firebaseAuthException);
-                  }
-                  String emailuid = _auth.user.uid;
-                  UserSimplePreferences.setAuthKey(emailuid);
-                  Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+                Navigator.pushNamed(context, HomeScreen.routeName);
 
-                } catch (e) {
-                  _btnController.error();
-                  if (e.code == 'user-not-found') {
-                    setState(() {
-                      addError(error: kUserNotFoundError);
-                    });
-                  } else if (e.code == 'wrong-password') {
-                    setState(() {
-                      addError(error: kPassWrongError);
-                    });
-                  } else if (e.code == 'network-request-failed') {
-                    setState(() {
-                      addError(error: kFirebaseNetworkError);
-                    });
-                  } else {
-                    setState(() {
-                      addError(error: ksomethingerror);
-                    });
-                  }
-                  _auth.firebaseAuthException = null;
-                  Timer(Duration(milliseconds: 1300), () {
-                    _btnController.reset();
-                  });
-                }
+                // try {
+                //   await _auth.signIn(
+                //     email: number + "@orev.user",
+                //     password: password,
+                //   );
+                //   if (_auth.firebaseAuthException != null) {
+                //     throw (_auth.firebaseAuthException);
+                //   }
+                //   String emailuid = _auth.user.uid;
+                //   UserSimplePreferences.setAuthKey(emailuid);
+                //   Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+                // } catch (e) {
+                //   _btnController.error();
+                //   if (e.code == 'user-not-found') {
+                //     setState(() {
+                //       addError(error: kUserNotFoundError);
+                //     });
+                //   } else if (e.code == 'wrong-password') {
+                //     setState(() {
+                //       addError(error: kPassWrongError);
+                //     });
+                //   } else if (e.code == 'network-request-failed') {
+                //     setState(() {
+                //       addError(error: kFirebaseNetworkError);
+                //     });
+                //   } else {
+                //     setState(() {
+                //       addError(error: ksomethingerror);
+                //     });
+                //   }
+                //   _auth.firebaseAuthException = null;
+                //   Timer(Duration(milliseconds: 1300), () {
+                //     _btnController.reset();
+                //   });
+                // }
               } else {
                 _btnController.error();
                 Timer(Duration(milliseconds: 1300), () {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:orev/screens/home/home_screen.dart';
-import 'package:orev/screens/splash/components/body.dart';
-import 'package:orev/services/user_simple_preferences.dart';
-import 'package:orev/size_config.dart';
+import 'package:socialbennett/screens/home/home_screen.dart';
+import 'package:socialbennett/screens/splash/components/body.dart';
+import 'package:socialbennett/services/user_simple_preferences.dart';
+import 'package:socialbennett/size_config.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -26,13 +26,13 @@ class _SplashScreenState extends State<SplashScreen> {
     SizeConfig().init(context);
     getFirst = UserSimplePreferences.getFirst() ?? '';
     return AnimatedSplashScreen(
-      backgroundColor: Color(0xffffefc5),
+        backgroundColor: Color(0xffffefc5),
         duration: 1,
         splashIconSize: getProportionateScreenWidth(280),
         splash: 'assets/images/BennettHub.png',
         nextScreen: (getFirst == '')
             ? Scaffold(
-          backgroundColor: Color(0xffffefc5),
+                backgroundColor: Color(0xffffefc5),
                 body: Body(),
               )
             : HomeScreen()

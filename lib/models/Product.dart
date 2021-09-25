@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:orev/models/Varient.dart';
+import 'package:socialbennett/models/Varient.dart';
 
 class Product {
   final String brandname;

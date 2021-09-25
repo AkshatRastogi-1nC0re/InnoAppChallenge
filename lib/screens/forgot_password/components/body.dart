@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:orev/components/custom_surfix_icon.dart';
-import 'package:orev/components/default_button.dart';
-import 'package:orev/components/form_error.dart';
-import 'package:orev/components/no_account_text.dart';
-import 'package:orev/providers/auth_provider.dart';
-import 'package:orev/services/user_services.dart';
-import 'package:orev/size_config.dart';
+import 'package:socialbennett/components/custom_surfix_icon.dart';
+import 'package:socialbennett/components/default_button.dart';
+import 'package:socialbennett/components/form_error.dart';
+import 'package:socialbennett/components/no_account_text.dart';
+import 'package:socialbennett/providers/auth_provider.dart';
+import 'package:socialbennett/services/user_services.dart';
+import 'package:socialbennett/size_config.dart';
 import '../../../constants.dart';
 import 'package:slide_popup_dialog/slide_popup_dialog.dart' as slideDialog;
 

@@ -8,10 +8,15 @@ class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffffefc6),
       appBar: AppBar(
-        title: Text("Sign Up",style: TextStyle(
-          fontSize: getProportionateScreenWidth(18),
-        ),),
+        backgroundColor: Color(0xffffefc6),
+        title: Text(
+          "Sign Up",
+          style: TextStyle(
+            fontSize: getProportionateScreenWidth(18),
+          ),
+        ),
       ),
       body: Body(),
     );
