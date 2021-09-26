@@ -324,6 +324,9 @@ class _BodyState extends State<Body> {
                 onTap: () {
                   launchURLLinkedIn();
                 },
+                child: FaIcon(FontAwesomeIcons.linkedin,
+                    size: getProportionateScreenWidth(30)),
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 child: FaIcon(FontAwesomeIcons.instagramSquare,
