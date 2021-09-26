@@ -31,76 +31,27 @@ In Bennett Hub we have made the life of students easy by categorizing the studen
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/hamburger.png?alt=media&token=09d25d46-f024-4d2b-8b7a-3da73f7f4ce0)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/splashhh.png?alt=media&token=9890742d-7b4b-4617-9f03-4825e2806a11)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/14.png?alt=media&token=dfb70925-aec6-4700-9d35-874742769481)
 
-and Many More
+and many more..
 
-## Directory Structure
-```
-lib
-│───main.dart    
-└───src
-    │───config
-    |    └──route.dart
-    │───model
-    │    │──category.dart
-    |    │──data.dart
-    |    └──product.dart
-    │───pages
-    |    │──homePage.dart
-    |    │──mainPage.dart
-    |    │──product_detail.dart
-    |    └──shoping_cart_page.dart
-    │───theme
-    |    │──light_color.dart
-    |    └──theme.dart
-    └───widgets
-         │──BottomNavigationBar
-         |   |──bootom_navigation_bar.dart
-         |   |──bottom_curved_Painter.dart
-         |   └──centered_elasticIn_curve.dart
-         |──bottom_navigation_bar.dart
-         |  customRoute.dart
-         |  prduct_icon.dart
-         │──product_card.dart
-         └──title_text.dart
-```
-## Pull Requests
+## Tech Stack Used
 
-I welcome and encourage all pull requests. It usually will take me within 24-48 hours to respond to any issue or request.
+Dart Programming Language,
+Flutter, and
+Firebase
 
-## Flutter projects
- Project Name        |Stars        
-:-------------------------|-------------------------
-[Twitter clone](https://github.com/TheAlphamerc/flutter_twitter_clone)| [![GitHub stars](https://img.shields.io/github/stars/Thealphamerc/flutter_twitter_clone?style=social)](https://github.com/login?return_to=%2FTheAlphamerc%flutter_twitter_clone)
-|[Healthcare App](https://github.com/TheAlphamerc/flutter_healthcare_app) |[![GitHub stars](https://img.shields.io/github/stars/Thealphamerc/flutter_healthcare_app?style=social)](https://github.com/login?return_to=%2FTheAlphamerc%flutter_healthcare_app)
-|[Smart course](https://github.com/TheAlphamerc/flutter_smart_course) |[![GitHub stars](https://img.shields.io/github/stars/Thealphamerc/flutter_smart_course?style=social)](https://github.com/login?return_to=%2FTheAlphamerc%flutter_smart_course)
-|[Pokedex](https://github.com/TheAlphamerc/flutter_pokedex)|[![GitHub stars](https://img.shields.io/github/stars/Thealphamerc/flutter_pokedex?style=social)](https://github.com/login?return_to=%2FTheAlphamerc%flutter_pokedex)
-|[Authentication](https://github.com/TheAlphamerc/flutter_login_signup)|[![GitHub stars](https://img.shields.io/github/stars/Thealphamerc/flutter_login_signup?style=social)](https://github.com/login?return_to=%2FTheAlphamerc%flutter_login_signup)
-|[Wallet App](https://github.com/TheAlphamerc/flutter_wallet_app)|[![GitHub stars](https://img.shields.io/github/stars/Thealphamerc/flutter_wallet_app?style=social)](https://github.com/login?return_to=%2FTheAlphamerc%flutter_wallet_app)
-|[News App](https://github.com/TheAlphamerc/flutter_news_app)|[![GitHub stars](https://img.shields.io/github/stars/Thealphamerc/flutter_news_app?style=social)](https://github.com/login?return_to=%2FTheAlphamerc%flutter_news_app)
-|[Watch App](https://github.com/TheAlphamerc/flutter_SoftUI_watchApp)|[![GitHub stars](https://img.shields.io/github/stars/Thealphamerc/flutter_SoftUI_watchApp?style=social)](https://github.com/login?return_to=%2FTheAlphamerc%flutter_SoftUI_watchApp)
-|[Smart Home App](https://github.com/TheAlphamerc/flutter_smart_home_app)|[![GitHub stars](https://img.shields.io/github/stars/Thealphamerc/flutter_smart_home_app?style=social)](https://github.com/login?return_to=%2FTheAlphamerc%flutter_smart_home_app)
-|[Yatch Booking App](https://github.com/TheAlphamerc/flutter_yatch_booking)|[![GitHub stars](https://img.shields.io/github/stars/Thealphamerc/flutter_yatch_booking?style=social)](https://github.com/login?return_to=%2FTheAlphamerc%flutter_yatch_booking)
-
-## Flutter plugins
-Plugin Name        | Stars        
-:-------------------------|-------------------------
-|[Empty widget](https://github.com/TheAlphamerc/empty_widget) |[![GitHub stars](https://img.shields.io/github/stars/Thealphamerc/empty_widget?style=social)](https://github.com/login?return_to=%2FTheAlphamerc%empty_widget)
-|[Add Thumbnail](https://github.com/TheAlphamerc/flutter_plugin_add_thumbnail) |[![GitHub stars](https://img.shields.io/github/stars/Thealphamerc/flutter_plugin_add_thumbnail?style=social)](https://github.com/login?return_to=%2FTheAlphamerc%flutter_plugin_add_thumbnail)
-|[Filter List](https://github.com/TheAlphamerc/flutter_plugin_filter_list)| [![GitHub stars](https://img.shields.io/github/stars/Thealphamerc/flutter_plugin_filter_list?style=social)](https://github.com/login?return_to=%2FTheAlphamerc%flutter_plugin_filter_list)
 
 ## Created & Maintained By
 
-[Sonu Sharma](https://github.com/TheAlphamerc) ([Twitter](https://www.twitter.com/TheAlphamerc)) ([Youtube](https://www.youtube.com/user/sonusharma045sonu/)) ([Insta](https://www.instagram.com/_sonu_sharma__)) ([Dev.to](https://dev.to/thealphamerc))
-  ![Twitter Follow](https://img.shields.io/twitter/follow/thealphamerc?style=social) 
+[Akshat Rastogi](https://github.com/AkshatRastogi-1nC0re)
+Email: [E20CSE003@bennett.edu.in](mailto:E20CSE003@bennett.edu.in)
 
+[Aryan Solanki](https://github.com/Aryan-Solanki)
+Email: [E20CSE157@bennett.edu.in](mailto:E20CSE157@bennett.edu.in)
 
-> If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of :coffee:
->
-> * [PayPal](https://www.paypal.me/TheAlphamerc/)
+[Yash Sharma](https://github.com/yashsharma1702)
+Email: [E20CSE158@bennett.edu.in](mailto:E20CSE158@bennett.edu.in)
 
-> You can also nominate me for Github Star developer program
-> https://stars.github.com/nominate
 
 ## Visitors Count
 
-<img align="left" src = "https://profile-counter.glitch.me/flutter_ecommerce_app/count.svg" alt ="Loading">
+<img align="left" src = "https://profile-counter.glitch.me/InnoAppChallenge/count.svg" alt ="Loading">
