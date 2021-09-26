@@ -24,10 +24,11 @@ class _BodyState extends State<Body> {
       : throw 'Could not launch $whatsapplink';
   Widget build(BuildContext context) {
     return Stack(children: [
+
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/images/profiledetail.png"),
+              image: AssetImage("assets/images/bottomdetail.png"),
               fit: BoxFit.cover),
         ),
         child: SingleChildScrollView(
@@ -223,6 +224,12 @@ class _BodyState extends State<Body> {
             ),
           ),
         ),
+      ),
+      Positioned(
+        width: getProportionateScreenWidth(56),
+        right: 0,
+        child: Image(
+            image: AssetImage("assets/images/rightbar.png")),
       ),
       Padding(
         padding: EdgeInsets.all(getProportionateScreenHeight(20)),
