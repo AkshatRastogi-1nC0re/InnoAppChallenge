@@ -6,8 +6,7 @@
 Bennett Hub is a social media application exclusively designed for the students of Bennett University. This application would be a blessing for many who want to expand their social circle and make new friends including their batchmates, students from different courses, their seniors, their juniors basically all who are part of the university.
 
 
-## Download App ![GitHub All Releases](https://img.shields.io/github/downloads/Thealphamerc/flutter_ecommerce_app/total?color=green)
-<a href="https://github.com/TheAlphamerc/flutter_ecommerce_app/releases/download/v1.0.0/app-release.apk"><img src="https://playerzon.com/asset/download.png" width="200"></img></a>
+## App Design
 <img src="https://cdn.dribbble.com/users/2432994/screenshots/10446127/media/fa0a9ce348e0bfa18b00ba2240543064.png"  /> 
 
 ## Android Screenshots
