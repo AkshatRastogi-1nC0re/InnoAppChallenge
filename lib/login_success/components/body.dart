@@ -21,6 +21,7 @@ class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color:Color(0xffffefc5),
       child: Lottie.asset("assets/animation/success.json", repeat: false),
     );
   }
