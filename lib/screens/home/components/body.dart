@@ -605,31 +605,52 @@ class _BodyState extends State<Body> {
                                 child: Padding(
                                   padding: EdgeInsets.only(left: 5, top: 2),
                                   child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      FittedBox(
-                                        child: Text(
-                                          Cat1users[index]["name"],
-                                          style: TextStyle(
-                                            fontSize:
+                                      Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          FittedBox(
+                                            child: Text(
+                                              Cat1users[index]["name"],
+                                              style: TextStyle(
+                                                fontSize:
                                                 getProportionateScreenWidth(12),
-                                            color: Colors.black,
-                                            fontFamily: "OpenSans",
-                                            fontWeight: FontWeight.w800,
+                                                color: Colors.black,
+                                                fontFamily: "OpenSans",
+                                                fontWeight: FontWeight.w800,
+                                              ),
+                                            ),
+                                          ),
+                                          Text(
+                                            "${Cat1users[index]["course"]},${Cat1users[index]["yog"]}",
+                                            style: TextStyle(
+                                              fontSize:
+                                              getProportionateScreenWidth(10),
+                                              color: Colors.black,
+                                              fontFamily: "OpenSans",
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      GestureDetector(
+                                        onTap: () {
+                                          print("gfffdfdd");
+                                        },
+                                        child: Align(
+                                          alignment: Alignment.bottomRight,
+                                          child: Text(
+                                            "See More",
+                                            style: TextStyle(
+                                                fontFamily: "OpenSans",
+                                                color: Colors.blue,
+                                                fontSize:
+                                                getProportionateScreenWidth(
+                                                    11)),
                                           ),
                                         ),
-                                      ),
-                                      Text(
-                                        "${Cat1users[index]["course"]},${Cat1users[index]["yog"]}",
-                                        style: TextStyle(
-                                          fontSize:
-                                              getProportionateScreenWidth(10),
-                                          color: Colors.black,
-                                          fontFamily: "OpenSans",
-                                          fontWeight: FontWeight.w500,
-                                        ),
-                                      ),
+                                      )
                                     ],
                                   ),
                                 )),
