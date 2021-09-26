@@ -378,7 +378,6 @@ class _BodyState extends State<Body> {
             ),
           ),
         ),
-        Align(alignment: Alignment.topRight,child: Icon(Icons.menu,size: getProportionateScreenWidth(30),),),
       ]
     );
   }
