@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:card_swiper/card_swiper.dart';
@@ -10,21 +12,89 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../size_config.dart';
 
 class Body extends StatefulWidget {
+  Map dict;
+  Body({this.dict});
   @override
-  _BodyState createState() => _BodyState();
+  _BodyState createState() => _BodyState(dict: dict);
 }
 
 class _BodyState extends State<Body> {
-  String whatsapplink = "http://Wa.me/+919540014357?text=Hii+Lets+Connect";
+  Map dict;
+  _BodyState({this.dict});
 
   @override
   GlobalKey<FlipCardState> cardKey = GlobalKey<FlipCardState>();
-  void launchURL() async => await canLaunch(whatsapplink)
-      ? await launch(whatsapplink)
-      : throw 'Could not launch $whatsapplink';
   Widget build(BuildContext context) {
-    return Stack(children: [
+    final _random = new Random();
 
+    var StartingText = [
+      "Hey, How are you ?",
+      "You have the best smile…FYI",
+      "Tell me about yourself",
+      "Have you done anything exciting lately?",
+      "What made you smile today?",
+      "How did you meet the host?",
+      "What’s your favorite form of social media?",
+      "What was the last good book you read?",
+      "Do you listen to any podcasts? Which is your favorite?",
+      "What do you think is the best show on Netflix right now?",
+      "Have you been on any interesting trips lately?",
+      "What do you think has been the best movie of the year so far?",
+      "What song do you wish you could put on right now?",
+      "Are you a cat person or a dog person?",
+      "Do you think you’re an introvert or an extrovert?",
+      "If you didn’t have the job you have now, what would you be?",
+      "What’s your strangest hidden talent?",
+      "What is something people are always surprised to learn about you?",
+      "What is the most rewarding part of your career?",
+      "Where do you want to be in five years?",
+      "What superpower do you wish you could have?",
+      "Where would you go on vacation if you had no budget?",
+      "If you could travel back in time, what decade would you choose to live in?",
+      "What’s the best thing you’ve ever bought off Amazon?",
+      "What’s the last concert you went to?",
+      "What is one thing you can’t live without?",
+      "What’s the strangest dream you’ve had recently?",
+      "What is your favorite book of all time?",
+      "How many countries have you been to?",
+      "What’s your favorite city you’ve visited?",
+      "Would you rather travel via plane or boat?",
+      "Would you rather be really hot or really cold?",
+      "What are your thoughts on the British royal family?",
+      "Do you like documentaries? Have you watched any good ones recently?",
+      "Who is your favorite celebrity couple ever?",
+      "Which celebrity couple do you wish would get back together?",
+      "If you could host a talk show, who would you have on first?",
+      "What’s your favorite sport?",
+      "What sport do you wish you were really good at?",
+      "What’s the best holiday?",
+      "How did you spend your last birthday?"
+    ];
+
+    String whatsapplink =
+        "http://Wa.me/+91${dict["number"]}?text=${StartingText[_random.nextInt(StartingText.length)].replaceAll(' ', '+')}";
+
+    String instaLink = dict["instaId"];
+    String facebookLink = dict["snapchatId"];
+    String linkedInLink = dict["linkedinId"];
+
+    void launchURL() async => await canLaunch(whatsapplink)
+        ? await launch(whatsapplink)
+        : throw 'Could not launch $whatsapplink';
+
+    void launchURLInsta() async => await canLaunch(instaLink)
+        ? await launch(instaLink)
+        : throw 'Could not launch $instaLink';
+
+    void launchURLFacebook() async => await canLaunch(facebookLink)
+        ? await launch(facebookLink)
+        : throw 'Could not launch $facebookLink';
+
+    void launchURLLinkedIn() async => await canLaunch(linkedInLink)
+        ? await launch(linkedInLink)
+        : throw 'Could not launch $linkedInLink';
+
+    return Stack(children: [
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
@@ -48,14 +118,14 @@ class _BodyState extends State<Body> {
                         height: getProportionateScreenHeight(400),
                         child: Swiper(
                           itemBuilder: (BuildContext context, int index) {
-                            return new Image.network(
-                              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHX3IMYfQ3e4Umde-R6XlqHPTftd7PuHWBclyXqeTn1QMO2ikWswMpXzcgd1ztzXYns0g&usqp=CAU",
+                            return new Image.asset(
+                              dict["image"],
                               fit: BoxFit.fill,
                             );
                           },
                           itemCount: 3,
                           pagination: new RectSwiperPaginationBuilder(),
-                          control: new SwiperControl(color: Colors.white ),
+                          control: new SwiperControl(color: Colors.white),
                         ),
                       ),
                     ),
@@ -86,7 +156,7 @@ class _BodyState extends State<Body> {
                                         getProportionateScreenHeight(15)),
                                 child: Center(
                                     child: Text(
-                                  "FootBall",
+                                  dict["interest1"],
                                   style: TextStyle(
                                       color: Color(0xff212f44),
                                       fontSize:
@@ -113,7 +183,7 @@ class _BodyState extends State<Body> {
                                         getProportionateScreenHeight(15)),
                                 child: Center(
                                     child: Text(
-                                  "FootBall",
+                                  dict["interest2"],
                                   style: TextStyle(
                                       color: Color(0xff212f44),
                                       fontSize:
@@ -121,33 +191,33 @@ class _BodyState extends State<Body> {
                                 )),
                               ),
                             ),
-                            SizedBox(
-                              width: getProportionateScreenWidth(5),
-                            ),
-                            Container(
-                              // width: getProportionateScreenWidth(60),
-                              decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.6),
-                                  // border: Border.all(
-                                  //   color: Colors.white,
-                                  // ),
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(20))),
-                              child: Padding(
-                                padding: EdgeInsets.symmetric(
-                                    vertical: getProportionateScreenWidth(5),
-                                    horizontal:
-                                        getProportionateScreenHeight(15)),
-                                child: Center(
-                                    child: Text(
-                                  "FootBall",
-                                  style: TextStyle(
-                                      color: Color(0xff212f44),
-                                      fontSize:
-                                          getProportionateScreenWidth(12)),
-                                )),
-                              ),
-                            ),
+                            // SizedBox(
+                            //   width: getProportionateScreenWidth(5),
+                            // ),
+                            // Container(
+                            //   // width: getProportionateScreenWidth(60),
+                            //   decoration: BoxDecoration(
+                            //       color: Colors.white.withOpacity(0.6),
+                            //       // border: Border.all(
+                            //       //   color: Colors.white,
+                            //       // ),
+                            //       borderRadius:
+                            //           BorderRadius.all(Radius.circular(20))),
+                            //   child: Padding(
+                            //     padding: EdgeInsets.symmetric(
+                            //         vertical: getProportionateScreenWidth(5),
+                            //         horizontal:
+                            //             getProportionateScreenHeight(15)),
+                            //     child: Center(
+                            //         child: Text(
+                            //       "FootBall",
+                            //       style: TextStyle(
+                            //           color: Color(0xff212f44),
+                            //           fontSize:
+                            //               getProportionateScreenWidth(12)),
+                            //     )),
+                            //   ),
+                            // ),
                           ],
                         ),
                       ],
@@ -175,7 +245,7 @@ class _BodyState extends State<Body> {
                           height: getProportionateScreenHeight(10),
                         ),
                         Text(
-                          "Lorem ipsum dolor sit amet coonsequuntur voluptatum rem ipsum dolor sit amet coonsequuntur voluptatum l rem ipsum dolor sit amet coonsequuntur voluptatum l rem ipsum dolor sit amet coonsequuntur voluptatum l laboruuas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga? ",
+                          dict["descritions"],
                           style: TextStyle(
                               fontFamily: "OpenSans",
                               color: Colors.black,
@@ -228,8 +298,7 @@ class _BodyState extends State<Body> {
       Positioned(
         width: getProportionateScreenWidth(56),
         right: 0,
-        child: Image(
-            image: AssetImage("assets/images/rightbar.png")),
+        child: Image(image: AssetImage("assets/images/rightbar.png")),
       ),
       Padding(
         padding: EdgeInsets.all(getProportionateScreenHeight(20)),
@@ -237,6 +306,24 @@ class _BodyState extends State<Body> {
           alignment: Alignment.topRight,
           child: Column(
             children: [
+              GestureDetector(
+                onTap: () {
+                  launchURLInsta();
+                },
+                child: FaIcon(FontAwesomeIcons.instagramSquare,
+                    size: getProportionateScreenWidth(30)),
+              ),
+              GestureDetector(
+                onTap: () {
+                  launchURLFacebook();
+                },
+                child: FaIcon(FontAwesomeIcons.snapchat,
+                    size: getProportionateScreenWidth(30)),
+              ),
+              GestureDetector(
+                onTap: () {
+                  launchURLLinkedIn();
+                },
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 child: FaIcon(FontAwesomeIcons.instagramSquare,
@@ -263,7 +350,7 @@ class _BodyState extends State<Body> {
             child: RotatedBox(
               quarterTurns: 3,
               child: Text(
-                "Aryan Solanki !",
+                "${dict["name"]} !",
                 style: TextStyle(
                   fontFamily: "Playlist",
                   fontSize: getProportionateScreenWidth(40),
@@ -277,16 +364,3 @@ class _BodyState extends State<Body> {
     ]);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
