@@ -276,7 +276,7 @@ class _BodyState extends State<Body> {
 
   var Cat3users = [
     {
-      "image": "assets/images/imagep18.png",
+      "image": "assets/images/imagep16.jpg",
       "name": "Akanksha Solanki",
       "course": "BBA",
       "yog": "2022",
