@@ -4,6 +4,7 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:flip_card/flip_card.dart';
 import 'package:socialbennett/screens/detail/detailscreen.dart';
 
+
 import '../../../size_config.dart';
 
 class Body extends StatefulWidget {
@@ -14,40 +15,6 @@ class Body extends StatefulWidget {
 class _BodyState extends State<Body> {
   @override
   GlobalKey<FlipCardState> cardKey = GlobalKey<FlipCardState>();
-
-  var sampleUsers = [
-    {
-      "image": "assets/images/imagep1.png",
-      "name": "Akshat Rastogi",
-      "course": "CSE",
-      "yog": "2024"
-    },
-    {
-      "image": "assets/images/imagep2.jpg",
-      "name": "Aryan Solanki",
-      "course": "CSE",
-      "yog": "2024"
-    },
-    {
-      "image": "assets/images/imagep3.jpg",
-      "name": "Yash Sharma",
-      "course": "CSE",
-      "yog": "2024"
-    },
-    {
-      "image": "assets/images/imagep4.png",
-      "name": "Manvi Gupta",
-      "course": "CA",
-      "yog": "2021"
-    },
-    {
-      "image": "assets/images/imagep5.jpg",
-      "name": "Shivangi Sharma",
-      "course": "CSE",
-      "yog": "2025"
-    },
-  ];
-
   Widget build(BuildContext context) {
     return Stack(
       children: [
@@ -81,164 +48,127 @@ class _BodyState extends State<Body> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                        ),
-                        Text(
-                          "  " + "Aryan !",
-                          style: TextStyle(
-                            fontFamily: "Playlist",
-                            fontSize: getProportionateScreenWidth(50),
-                            color: Color(0xff212f44),
+                          Text(
+                            "  "+"Aryan !",
+                            style: TextStyle(
+                              fontFamily: "Playlist",
+                              fontSize: getProportionateScreenWidth(50),
+
+                              color: Color(0xff212f44),
+                            ),
                           ),
-                        ),
-                      ],
-                    )),
-                Container(
-                    height: getProportionateScreenHeight(310),
-                    child: Swiper(
-                      physics: NeverScrollableScrollPhysics(),
-                      itemBuilder: (BuildContext context, int index) {
-                        return GestureDetector(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => DetailScreen()),
-                            );
-                          },
-                          child: Stack(
-                            children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(8.0),
-                                child: Image.asset(
-                                  sampleUsers[index]["image"],
-                                  fit: BoxFit.fill,
+                        ],
+                      )
+                  ),
+                  Container(
+                      height: getProportionateScreenHeight(310),
+                      child: Swiper(
+                        physics: NeverScrollableScrollPhysics(),
+                        itemBuilder: (BuildContext context, int index) {
+                          return GestureDetector(
+                            onTap: (){
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => DetailScreen()),
+                              );
+                            },
+                            child: Stack(
+                              children: [
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                  child: Image.network(
+                                    "https://harris.uchicago.edu/files/styles/square/public/2019-10/emileigh_harrison_cropped.jpg?itok=zL13vTOG",
+                                    fit: BoxFit.fill,
+                                  ),
                                 ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(left: 5),
-                                child: Column(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          sampleUsers[index]["name"],
-                                          style: TextStyle(
-                                            fontSize:
-                                                getProportionateScreenWidth(26),
-                                            color: Colors.white,
-                                            fontFamily: "OpenSans",
-                                            fontWeight: FontWeight.w800,
-                                          ),
-                                        ),
-                                        Text(
-                                          "${sampleUsers[index]["course"]},${sampleUsers[index]["yog"]}",
-                                          style: TextStyle(
-                                            fontSize:
-                                                getProportionateScreenWidth(14),
-                                            color: Colors.white,
-                                            fontFamily: "OpenSans",
-                                            fontWeight: FontWeight.w500,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsets.only(
-                                          bottom:
-                                              getProportionateScreenHeight(20)),
-                                      child: Row(
+                                Padding(
+                                  padding: EdgeInsets.only(left: 5),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Container(
-                                            // width: getProportionateScreenWidth(60),
-                                            decoration: BoxDecoration(
-                                                color: Colors.white
-                                                    .withOpacity(0.6),
-                                                // border: Border.all(
-                                                //   color: Colors.white,
-                                                // ),
-                                                borderRadius: BorderRadius.all(
-                                                    Radius.circular(20))),
-                                            child: Padding(
-                                              padding: EdgeInsets.symmetric(
-                                                  vertical:
-                                                      getProportionateScreenWidth(
-                                                          5),
-                                                  horizontal:
-                                                      getProportionateScreenHeight(
-                                                          15)),
-                                              child: Center(
-                                                  child: Text(
-                                                "FootBall",
-                                                style: TextStyle(
-                                                    color: Color(0xff212f44),
-                                                    fontSize:
-                                                        getProportionateScreenWidth(
-                                                            13)),
-                                              )),
+                                          Text(
+                                            "Yash Sharma",
+                                            style: TextStyle(
+                                              fontSize: getProportionateScreenWidth(26),
+                                              color: Colors.white,
+                                              fontFamily: "OpenSans",
+                                              fontWeight: FontWeight.w800,
                                             ),
                                           ),
-                                          SizedBox(
-                                            width:
-                                                getProportionateScreenWidth(10),
-                                          ),
-                                          Container(
-                                            // width: getProportionateScreenWidth(60),
-                                            decoration: BoxDecoration(
-                                                color: Colors.white
-                                                    .withOpacity(0.6),
-                                                // border: Border.all(
-                                                //   color: Colors.white,
-                                                // ),
-                                                borderRadius: BorderRadius.all(
-                                                    Radius.circular(20))),
-                                            child: Padding(
-                                              padding: EdgeInsets.symmetric(
-                                                  vertical:
-                                                      getProportionateScreenWidth(
-                                                          5),
-                                                  horizontal:
-                                                      getProportionateScreenHeight(
-                                                          15)),
-                                              child: Center(
-                                                  child: Text(
-                                                "FootBall",
-                                                style: TextStyle(
-                                                    color: Color(0xff212f44),
-                                                    fontSize:
-                                                        getProportionateScreenWidth(
-                                                            13)),
-                                              )),
+                                          Text(
+                                            "CSE,2024",
+                                            style: TextStyle(
+                                              fontSize: getProportionateScreenWidth(14),
+                                              color: Colors.white,
+                                              fontFamily: "OpenSans",
+                                              fontWeight: FontWeight.w500,
                                             ),
-                                          )
+                                          ),
                                         ],
                                       ),
-                                    ),
-                                  ],
-                                ),
-                              )
-                            ],
-                          ),
-                        );
-                      },
-                      itemCount: sampleUsers.length,
-                      itemWidth: 300.0,
-                      layout: SwiperLayout.STACK,
-                    )),
-                Padding(
-                  padding: EdgeInsets.symmetric(
-                      vertical: getProportionateScreenWidth(10),
-                      horizontal: getProportionateScreenHeight(20)),
-                  child: Text(
-                    "Anime",
-                    style: TextStyle(
-                      fontSize: getProportionateScreenWidth(26),
-                      fontFamily: "OpenSans",
-                      color: Color(0xff212f44),
+                                      Padding(
+                                        padding: EdgeInsets.only(bottom: getProportionateScreenHeight(20)),
+                                        child: Row(
+                                          children: [
+                                            Container(
+                                              // width: getProportionateScreenWidth(60),
+                                              decoration: BoxDecoration(
+                                                  color: Colors.white.withOpacity(0.6),
+                                                  // border: Border.all(
+                                                  //   color: Colors.white,
+                                                  // ),
+                                                  borderRadius: BorderRadius.all(Radius.circular(20))
+                                              ),
+                                              child: Padding(
+                                                padding:  EdgeInsets.symmetric(vertical: getProportionateScreenWidth(5),horizontal: getProportionateScreenHeight(15)),
+                                                child: Center(child: Text("FootBall",style: TextStyle(color: Color(0xff212f44),fontSize: getProportionateScreenWidth(13)),)),
+                                              ),
+                                            ),
+                                            SizedBox(width: getProportionateScreenWidth(10),),
+                                            Container(
+                                              // width: getProportionateScreenWidth(60),
+                                              decoration: BoxDecoration(
+                                                  color: Colors.white.withOpacity(0.6),
+                                                  // border: Border.all(
+                                                  //   color: Colors.white,
+                                                  // ),
+                                                  borderRadius: BorderRadius.all(Radius.circular(20))
+                                              ),
+                                              child: Padding(
+                                                padding:  EdgeInsets.symmetric(vertical: getProportionateScreenWidth(5),horizontal: getProportionateScreenHeight(15)),
+                                                child: Center(child: Text("FootBall",style: TextStyle(color: Color(0xff212f44),fontSize: getProportionateScreenWidth(13)),)),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                )
+
+
+                              ],
+                            ),
+                          );
+                        },
+                        itemCount: 10,
+                        itemWidth: 300.0,
+                        layout: SwiperLayout.STACK,
+                      )
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: getProportionateScreenWidth(10),horizontal: getProportionateScreenHeight(20)),
+                    child: Text(
+                      "Anime",
+                      style: TextStyle(
+                        fontSize: getProportionateScreenWidth(26),
+                        fontFamily: "OpenSans",
+                        color: Color(0xff212f44),
+                      ),
                     ),
                   ),
                   Container(
@@ -286,25 +216,26 @@ class _BodyState extends State<Body> {
                                           fontWeight: FontWeight.w500,
                                         ),
                                       ),
-                                    ),
-                                  ],
-                                ),
-                              )
-                            ],
-                          ),
-                        );
-                      }),
-                ),
-                Padding(
-                  padding: EdgeInsets.symmetric(
-                      vertical: getProportionateScreenWidth(10),
-                      horizontal: getProportionateScreenHeight(20)),
-                  child: Text(
-                    "Coding",
-                    style: TextStyle(
-                      fontSize: getProportionateScreenWidth(26),
-                      fontFamily: "OpenSans",
-                      color: Color(0xff212f44),
+                                    ],
+                                  ),
+                                )
+
+
+                              ],
+                            ),
+                          );
+                        }
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: getProportionateScreenWidth(10),horizontal: getProportionateScreenHeight(20)),
+                    child: Text(
+                      "Coding",
+                      style: TextStyle(
+                        fontSize: getProportionateScreenWidth(26),
+                        fontFamily: "OpenSans",
+                        color: Color(0xff212f44),
+                      ),
                     ),
                   ),
 
@@ -403,48 +334,30 @@ class _BodyState extends State<Body> {
                                                 color: index%2==0?Colors.white:Colors.black,
                                                 fontWeight: FontWeight.w500,
                                               ),
-                                            ],
+                                            ),
                                           ),
-                                        ),
-                                      )
-                                    : Center(),
-                              ],
+                                        ],
+                                      ),
+                                    ),
+                                  ):Center(),
+                                ],
+                              ),
                             ),
                           ),
-                        ),
-                        back: ClipRRect(
-                          borderRadius: BorderRadius.circular(10.0),
-                          child: Container(
-                              decoration: BoxDecoration(
-                                color: Color(0xffffefc5),
-                                image: DecorationImage(
-                                  image: new AssetImage(
-                                      'assets/images/lightlogo.png'),
-                                ),
-                              ),
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsets.only(
-                                        top: getProportionateScreenHeight(15)),
-                                    child: Text(
-                                      "Lorem ipsum dolor sit amet coonsequuntur voluptatum laboruuas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga? ",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontFamily: "OpenSans",
-                                          color: Colors.black,
-                                          fontSize:
-                                              getProportionateScreenWidth(12)),
-                                    ),
+                          back: ClipRRect(
+                            borderRadius: BorderRadius.circular(10.0),
+                            child: Container(
+                                decoration: BoxDecoration(
+                                  color: Color(0xffffefc5),
+                                  image: DecorationImage(
+                                    image: new AssetImage('assets/images/lightlogo.png'),
                                   ),
-                                  GestureDetector(
-                                    onTap: () {
-                                      print("gfffdfdd");
-                                    },
-                                    child: Align(
-                                      alignment: Alignment.bottomRight,
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsets.only(top: getProportionateScreenHeight(15)),
                                       child: Text(
                                         "Lorem ipsum dolor sit amet coonsequuntur voluptatum laboruuas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga? ",
                                         textAlign: TextAlign.center,
@@ -466,17 +379,16 @@ class _BodyState extends State<Body> {
                           ),
                         ),
                       ),
+                      staggeredTileBuilder: (int index) =>
+                      new StaggeredTile.count(2, index.isEven ? 2.5 : 1.9),
+                      mainAxisSpacing: 4.0,
+                      crossAxisSpacing: 4.0,
                     ),
-                    staggeredTileBuilder: (int index) =>
-                        new StaggeredTile.count(2, index.isEven ? 2.5 : 1.9),
-                    mainAxisSpacing: 4.0,
-                    crossAxisSpacing: 4.0,
                   ),
-                ),
-                SizedBox(
-                  height: getProportionateScreenHeight(20),
-                )
-              ],
+                  SizedBox(height: getProportionateScreenHeight(20),)
+
+                ],
+              ),
             ),
           ),
         ),
@@ -485,3 +397,6 @@ class _BodyState extends State<Body> {
     );
   }
 }
+
+
+
