@@ -489,50 +489,63 @@ class _BodyState extends State<Body> {
                       scrollDirection: Axis.horizontal,
                       shrinkWrap: true,
                       itemBuilder: (BuildContext context, int index) {
-                        return Padding(
-                          padding: EdgeInsets.symmetric(
-                              horizontal: getProportionateScreenWidth(10)),
-                          child: Stack(
-                            children: [
-                              Container(
-                                height: getProportionateScreenHeight(130),
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(10.0),
-                                  child: Image.asset(
-                                    Cat1users[index]["image"],
-                                    fit: BoxFit.fill,
-                                  ),
+                        return FlipCard(
+                          direction: FlipDirection.VERTICAL,
+                          front: Padding(
+                            padding: EdgeInsets.symmetric(
+                                horizontal: getProportionateScreenWidth(10)),
+                            child: Container(
+                              height: getProportionateScreenHeight(130),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10.0),
+                                child: Image.asset(
+                                  Cat1users[index]["image"],
+                                  fit: BoxFit.fill,
                                 ),
                               ),
-                              Padding(
-                                padding: EdgeInsets.only(left: 5, top: 2),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      Cat1users[index]["name"],
-                                      style: TextStyle(
-                                        fontSize:
-                                            getProportionateScreenWidth(12),
-                                        color: Colors.white,
-                                        fontFamily: "OpenSans",
-                                        fontWeight: FontWeight.w800,
-                                      ),
-                                    ),
-                                    Text(
-                                      "${Cat1users[index]["course"]},${Cat1users[index]["yog"]}",
-                                      style: TextStyle(
-                                        fontSize:
-                                            getProportionateScreenWidth(10),
-                                        color: Colors.white,
-                                        fontFamily: "OpenSans",
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                    ),
-                                  ],
+                            ),
+                          ),
+                          back: ClipRRect(
+                            borderRadius: BorderRadius.circular(10.0),
+                            child: Container(
+                              width: getProportionateScreenWidth(100),
+                                decoration: BoxDecoration(
+                                  color: Color(0xffffefc5),
+                                  image: DecorationImage(
+                                    image: new AssetImage(
+                                        'assets/images/lightlogo.png'),
+                                  ),
                                 ),
-                              )
-                            ],
+                                child: Padding(
+                                  padding: EdgeInsets.only(left: 5, top: 2),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      FittedBox(
+                                        child: Text(
+                                          Cat1users[index]["name"],
+                                          style: TextStyle(
+                                            fontSize:
+                                            getProportionateScreenWidth(12),
+                                            color: Colors.black,
+                                            fontFamily: "OpenSans",
+                                            fontWeight: FontWeight.w800,
+                                          ),
+                                        ),
+                                      ),
+                                      Text(
+                                        "${Cat1users[index]["course"]},${Cat1users[index]["yog"]}",
+                                        style: TextStyle(
+                                          fontSize:
+                                          getProportionateScreenWidth(10),
+                                          color: Colors.black,
+                                          fontFamily: "OpenSans",
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                )),
                           ),
                         );
                       }),

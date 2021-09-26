@@ -306,41 +306,35 @@ class _BodyState extends State<Body> {
           alignment: Alignment.topRight,
           child: Column(
             children: [
-              GestureDetector(
-                onTap: () {
-                  launchURLInsta();
-                },
-                child: FaIcon(FontAwesomeIcons.instagramSquare,
-                    size: getProportionateScreenWidth(30)),
-              ),
-              GestureDetector(
-                onTap: () {
-                  launchURLFacebook();
-                },
-                child: FaIcon(FontAwesomeIcons.snapchat,
-                    size: getProportionateScreenWidth(30)),
-              ),
-              GestureDetector(
-                onTap: () {
-                  launchURLLinkedIn();
-                },
-                child: FaIcon(FontAwesomeIcons.linkedin,
-                    size: getProportionateScreenWidth(30)),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 8),
+                child: GestureDetector(
+                  onTap: () {
+                    launchURLInsta();
+                  },
+                  child: FaIcon(FontAwesomeIcons.instagramSquare,
+                      size: getProportionateScreenWidth(30)),
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8),
-                child: FaIcon(FontAwesomeIcons.instagramSquare,
-                    size: getProportionateScreenWidth(30)),
+                child: GestureDetector(
+                  onTap: () {
+                    launchURLFacebook();
+                  },
+                  child: FaIcon(FontAwesomeIcons.facebook,
+                      size: getProportionateScreenWidth(30)),
+                ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8.0),
-                child: FaIcon(FontAwesomeIcons.facebook,
-                    size: getProportionateScreenWidth(30)),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8.0),
-                child: FaIcon(FontAwesomeIcons.linkedin,
-                    size: getProportionateScreenWidth(30)),
+                padding: const EdgeInsets.symmetric(vertical: 8),
+                child: GestureDetector(
+                  onTap: () {
+                    launchURLLinkedIn();
+                  },
+                  child: FaIcon(FontAwesomeIcons.linkedin,
+                      size: getProportionateScreenWidth(30)),
+                ),
               ),
             ],
           ),
