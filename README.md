@@ -17,8 +17,9 @@ Bennett Hub is a social media application exclusively designed for the students 
 
 ## Home Screen
 
+  HomePage                |        HomePage         |       HomePage
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/TheAlphamerc/flutter_ecommerce_app/blob/master/screenshots/screenshot_ios_1.png?raw=true)|![](https://github.com/TheAlphamerc/flutter_ecommerce_app/blob/master/screenshots/screenshot_ios_2.png?raw=true)|![](https://github.com/TheAlphamerc/flutter_ecommerce_app/blob/master/screenshots/screenshot_ios_3.png?raw=true)
+![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/2.png?alt=media&token=c82a1ed5-0baa-4eb2-913e-5b602fc13061)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/1.png?alt=media&token=a9735759-3f30-4120-9f70-20fabdf3ae45)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/aksnsha.png?alt=media&token=10259575-2001-43cf-80ad-28116f488c9a)
 
 ## Directory Structure
 ```
