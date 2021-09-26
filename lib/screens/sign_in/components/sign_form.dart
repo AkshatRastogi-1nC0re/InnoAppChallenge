@@ -5,6 +5,7 @@ import 'package:socialbennett/components/custom_surfix_icon.dart';
 import 'package:socialbennett/components/form_error.dart';
 import 'package:socialbennett/helper/keyboard.dart';
 import 'package:socialbennett/providers/auth_provider.dart';
+import 'package:socialbennett/screens/address/address.dart';
 import 'package:socialbennett/screens/forgot_password/forgot_password_screen.dart';
 import 'package:socialbennett/screens/home/home_screen.dart';
 import 'package:socialbennett/screens/login_success/login_success_screen.dart';
@@ -81,8 +82,13 @@ class _SignFormState extends State<SignForm> {
               ),
               Spacer(),
               GestureDetector(
-                onTap: () => Navigator.pushNamed(
-                    context, ForgotPasswordScreen.routeName),
+                onTap: () {
+
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Address()),
+                  );
+                  },
                 child: Text(
                   "Forgot Password",
                   style: TextStyle(
