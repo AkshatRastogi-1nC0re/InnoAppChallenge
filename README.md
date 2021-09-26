@@ -5,6 +5,8 @@
 
 Bennett Hub is a social media application exclusively designed for the students of Bennett University. This application would be a blessing for many who want to expand their social circle and make new friends including their batchmates, students from different courses, their seniors, their juniors basically all who are part of the university.
 
+In Bennett Hub we have made the life of students easy by categorizing the students according to their interest so that they can see who shares same interests with them and knowing this would help in starting the conversation at first. we have also provided support for the people who shares same interest where an algorithm will generate a conversation starter message by pressing the "let's start a chat!"  button.
+
 
 ## App Design
 <img src="https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/Untitled%20design%20(30).png?alt=media&token=46b84570-bfe7-456a-8120-8f1c2c7b8686"  /> 
