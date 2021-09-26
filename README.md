@@ -40,17 +40,16 @@ I welcome and encourage all pull requests. It usually will take me within 24-48 
 
 ## Created & Maintained By
 
-[Akshat Rastogi](https://github.com/AkshatRastogi-1nC0re) ([Twitter](https://twitter.com/AkshatRasogi)) ([Insta](https://www.instagram.com/akshat.rastogi.bu__/))
-  ![Twitter Follow](https://img.shields.io/twitter/follow/thealphamerc?style=social) 
+[Akshat Rastogi](https://github.com/AkshatRastogi-1nC0re)
+Email: [E20CSE003@bennett.edu.in](mailto:E20CSE003@bennett.edu.in)
 
+[Aryan Solanki](https://github.com/Aryan-Solanki)
+Email: [E20CSE157@bennett.edu.in](mailto:E20CSE157@bennett.edu.in)
 
-> If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of :coffee:
->
-> * [PayPal](https://www.paypal.me/TheAlphamerc/)
+[Yash Sharma](https://github.com/yashsharma1702)
+Email: [E20CSE158@bennett.edu.in](mailto:E20CSE158@bennett.edu.in)
 
-> You can also nominate me for Github Star developer program
-> https://stars.github.com/nominate
 
 ## Visitors Count
 
-<img align="left" src = "https://profile-counter.glitch.me/flutter_ecommerce_app/count.svg" alt ="Loading">
+<img align="left" src = "https://profile-counter.glitch.me/InnoAppChallenge/count.svg" alt ="Loading">
