@@ -5,7 +5,6 @@ import 'package:socialbennett/components/default_button.dart';
 import 'package:socialbennett/components/form_error.dart';
 import 'package:socialbennett/providers/auth_provider.dart';
 import 'package:socialbennett/screens/home/home_screen.dart';
-import 'package:socialbennett/services/product_services.dart';
 import 'package:socialbennett/services/user_services.dart';
 import 'package:socialbennett/services/user_simple_preferences.dart';
 import 'package:rounded_loading_button/rounded_loading_button.dart';
@@ -108,26 +107,6 @@ class _SignUpFormState extends State<SignUpForm> with ChangeNotifier {
       await _auth.signUp(email: tempemail, password: password);
       uid_real = _auth.user.uid;
       print("Email UID is $uid_real");
-      Map<String, dynamic> UserInfo = {
-        "userId": uid_real,
-        "name": name,
-        "number": "+91" + number,
-        "address": [],
-        "image": "",
-        "walletTransactions": [],
-      };
-
-      var sampleCart = {"cartItems": []};
-
-      var sampleFav = {"favourites": []};
-
-      ProductServices _services = new ProductServices();
-      _services.favourites.doc(uid_real).set(sampleFav);
-      _services.cart.doc(uid_real).set(sampleCart);
-
-      Map<String, dynamic> keypass = {"id": phone_uid, "address": password};
-      _userServices.createUserData(UserInfo);
-      _userServices.setKeyPass(keypass);
       UserSimplePreferences.setAuthKey(uid_real);
       Navigator.pushNamed(context, HomeScreen.routeName);
     }

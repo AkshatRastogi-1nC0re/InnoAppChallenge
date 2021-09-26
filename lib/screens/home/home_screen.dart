@@ -1,14 +1,7 @@
-import 'package:card_swiper/card_swiper.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:socialbennett/components/coustom_bottom_nav_bar.dart';
-import 'package:socialbennett/components/updateavailablescreen.dart';
-import 'package:socialbennett/enums.dart';
 import 'package:socialbennett/screens/info/info.dart';
-import 'package:socialbennett/services/product_services.dart';
-import 'package:package_info_plus/package_info_plus.dart';
 import 'package:socialbennett/size_config.dart';
 
 import 'dart:ui' as ui;
@@ -69,7 +62,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Colors.red,
                   labelColor: Colors.blue,
                 ),
-
                 HawkFabMenuItem(
                   label: '',
                   ontap: () {},
