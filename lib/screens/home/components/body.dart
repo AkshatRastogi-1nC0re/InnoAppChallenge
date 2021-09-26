@@ -472,7 +472,7 @@ class _BodyState extends State<Body> {
                       vertical: getProportionateScreenWidth(10),
                       horizontal: getProportionateScreenHeight(10)),
                   child: Text(
-                    "#YourBatchmates",
+                    "#YourBatchmates 🎓",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: getProportionateScreenWidth(20),
@@ -555,7 +555,7 @@ class _BodyState extends State<Body> {
                       vertical: getProportionateScreenWidth(10),
                       horizontal: getProportionateScreenHeight(10)),
                   child: Text(
-                    " #MovieBuffs",
+                    " #MovieBuffs  🎬",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: getProportionateScreenWidth(20),
@@ -692,7 +692,7 @@ class _BodyState extends State<Body> {
                       vertical: getProportionateScreenWidth(10),
                       horizontal: getProportionateScreenHeight(10)),
                   child: Text(
-                    "#CodeCrashers",
+                    "#CodeCrashers 😎",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: getProportionateScreenWidth(20),
