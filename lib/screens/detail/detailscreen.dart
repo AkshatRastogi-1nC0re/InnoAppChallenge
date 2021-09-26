@@ -13,7 +13,7 @@ import '../../constants.dart';
 import 'components/body.dart';
 
 class DetailScreen extends StatefulWidget {
-  static String routeName = "/home";
+  static String routeName = "/details";
   @override
   _DetailScreenState createState() => _DetailScreenState();
 }
@@ -41,18 +41,18 @@ class _DetailScreenState extends State<DetailScreen> {
         context,
         MaterialPageRoute(
             builder: (context) => UpdateAvailable(
-              value: "Download Now",
-              bottomNavigation: false,
-            )),
+                  value: "Download Now",
+                  bottomNavigation: false,
+                )),
       );
     } else if (maintenance) {
       Navigator.push(
         context,
         MaterialPageRoute(
             builder: (context) => UpdateAvailable(
-              value: "Come Back Soon",
-              bottomNavigation: false,
-            )),
+                  value: "Come Back Soon",
+                  bottomNavigation: false,
+                )),
       );
     }
   }
@@ -68,31 +68,10 @@ class _DetailScreenState extends State<DetailScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async {
-        DateTime currenttime = DateTime.now();
-        bool backbutton = backbuttonpressedTime == null ||
-            currenttime.difference(backbuttonpressedTime) >
-                Duration(seconds: 2);
-        if (backbutton) {
-          backbuttonpressedTime = currenttime;
-          Fluttertoast.showToast(
-              msg: "Double Tap to close App",
-              toastLength: Toast.LENGTH_SHORT,
-              timeInSecForIosWeb: 2,
-              gravity: ToastGravity.BOTTOM);
-          return false;
-        }
-        SystemNavigator.pop();
-        return false;
-      },
-      child: SafeArea(
-        child: Scaffold(
-          body: Body(),
-        ),
+    return SafeArea(
+      child: Scaffold(
+        body: Body(),
       ),
     );
   }
 }
-
-
