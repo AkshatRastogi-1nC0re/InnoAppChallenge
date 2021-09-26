@@ -11,8 +11,6 @@ Bennett Hub is a social media application exclusively designed for the students 
 
 ## App Screens
 
-#Splash Screen
-
   Being New                |        Being Open         |       Being Social
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/13.png?alt=media&token=895bf20f-2ffb-4bb9-8127-b8b8e71c2323)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/15.png?alt=media&token=49564f27-5395-4ec3-8e7b-fc5ea28232aa)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/11.png?alt=media&token=e1eb8faa-0539-4e9f-8bd7-fe1a2d82f09a)
@@ -26,6 +24,10 @@ Bennett Hub is a social media application exclusively designed for the students 
   About Us                 |        Detail Screen      |       SignIn
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/10.png?alt=media&token=cf08e5eb-c73b-4803-b45d-a69913d89944)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/4.png?alt=media&token=dfa5a8c6-e816-4535-ba66-68a000afcfa8)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/12.png?alt=media&token=89c28d13-bd7c-40ce-883e-3aea7ff1c263)
+ 
+  Menu                     |        Splash Screen      |       SignUp
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/hamburger.png?alt=media&token=09d25d46-f024-4d2b-8b7a-3da73f7f4ce0)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/splashhh.png?alt=media&token=9890742d-7b4b-4617-9f03-4825e2806a11)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/14.png?alt=media&token=dfb70925-aec6-4700-9d35-874742769481)
 
 ## Directory Structure
 ```
