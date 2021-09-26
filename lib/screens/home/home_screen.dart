@@ -21,48 +21,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  bool firsttime = false;
-  bool maintenance = false;
-  bool updateAvailable = false;
-
-  checkInitial() async {
-    ProductServices _services = ProductServices();
-    DocumentSnapshot check = await _services.initialChecks.get();
-    PackageInfo packageInfo = await PackageInfo.fromPlatform();
-
-    String version = packageInfo.version;
-
-    if (version != check["currentVersion"] && check["updateAvailable"]) {
-      updateAvailable = true;
-    }
-
-    maintenance = check["maintenance"];
-
-    if (updateAvailable) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-            builder: (context) => UpdateAvailable(
-                  value: "Download Now",
-                  bottomNavigation: false,
-                )),
-      );
-    } else if (maintenance) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-            builder: (context) => UpdateAvailable(
-                  value: "Come Back Soon",
-                  bottomNavigation: false,
-                )),
-      );
-    }
-  }
-
   @override
   void initState() {
-    firsttime = true;
-    checkInitial();
     super.initState();
   }
 
@@ -100,28 +60,31 @@ class _HomeScreenState extends State<HomeScreen> {
               items: [
                 HawkFabMenuItem(
                   label: '',
-                  ontap: () {
-
-                  },
-                  icon: Icon(Icons.home,size: getProportionateScreenWidth(30),),
+                  ontap: () {},
+                  icon: Icon(
+                    Icons.home,
+                    size: getProportionateScreenWidth(30),
+                  ),
                   color: Colors.red,
                   labelColor: Colors.blue,
                 ),
                 HawkFabMenuItem(
                   label: '',
-                  ontap: () {
-
-                  },
-                  icon: Icon(Icons.comment,size: getProportionateScreenWidth(30),),
+                  ontap: () {},
+                  icon: Icon(
+                    Icons.comment,
+                    size: getProportionateScreenWidth(30),
+                  ),
                   labelColor: Colors.white,
                   labelBackgroundColor: Colors.blue,
                 ),
                 HawkFabMenuItem(
                   label: '',
-                  ontap: () {
-
-                  },
-                  icon: Icon(Icons.add_a_photo,size: getProportionateScreenWidth(30),),
+                  ontap: () {},
+                  icon: Icon(
+                    Icons.add_a_photo,
+                    size: getProportionateScreenWidth(30),
+                  ),
                 ),
               ],
               body: Body(),
@@ -132,10 +95,6 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
-
-
-
 
 /// Wrapper that builds a FAB menu on top of [body] in a [Stack]
 class HawkFabMenu extends StatefulWidget {
@@ -254,10 +213,10 @@ class _HawkFabMenuState extends State<HawkFabMenu>
                   .items
                   .map<Widget>(
                     (item) => _MenuItemWidget(
-                  item: item,
-                  toggleMenu: _toggleMenu,
-                ),
-              )
+                      item: item,
+                      toggleMenu: _toggleMenu,
+                    ),
+                  )
                   .toList(),
             ),
           ),
@@ -325,7 +284,8 @@ class _MenuItemWidget extends StatelessWidget {
     return InkWell(
       onTap: this.onTap,
       child: Padding(
-        padding:  EdgeInsets.symmetric(vertical: getProportionateScreenHeight(8)),
+        padding:
+            EdgeInsets.symmetric(vertical: getProportionateScreenHeight(8)),
         child: GestureDetector(
           onTap: this.onTap,
           child: this.item.icon,
@@ -364,6 +324,3 @@ class HawkFabMenuItem {
     this.labelColor,
   });
 }
-
-
-
