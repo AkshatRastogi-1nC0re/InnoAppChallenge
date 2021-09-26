@@ -109,12 +109,11 @@ class _SignUpFormState extends State<SignUpForm> with ChangeNotifier {
       uid_real = _auth.user.uid;
       print("Email UID is $uid_real");
       Map<String, dynamic> UserInfo = {
-        "id": uid_real,
+        "userId": uid_real,
         "name": name,
         "number": "+91" + number,
         "address": [],
         "image": "",
-        "walletAmt": 0,
         "walletTransactions": [],
       };
 
