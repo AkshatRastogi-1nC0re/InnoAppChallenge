@@ -274,6 +274,92 @@ class _BodyState extends State<Body> {
     },
   ];
 
+  var Cat3users = [
+    {
+      "image": "assets/images/imagep18.png",
+      "name": "Akanksha Solanki",
+      "course": "BBA",
+      "yog": "2022",
+      "number": "9826723647",
+      "descritions": "",
+      "flipperDescription": "",
+      "interest1": "Singing",
+      "interest2": "Acting",
+      "instaId": "https://www.instagram.com/akanksha_solanki/",
+      "snapchatId": "https://www.facebook.com/akanksha.solanki.56/",
+      "linkedinId": "https://www.linkedin.com/in/akanksha-solanki-759b391a5/",
+    },
+    {
+      "image": "assets/images/imagep17.png",
+      "name": "Vansh Singh",
+      "course": "BA JMC",
+      "yog": "2021",
+      "number": "9846758390",
+      "descritions": "",
+      "flipperDescription": "",
+      "interest1": "Writer",
+      "interest2": "Foodie",
+      "instaId": "https://www.instagram.com/vanshsingh._/",
+      "snapchatId": "https://www.facebook.com/vansh.singh.3304",
+      "linkedinId": "https://www.linkedin.com/in/vansh-singh-00524714a/",
+    },
+    {
+      "image": "assets/images/imagep7.png",
+      "name": "Tushar Rajput",
+      "course": "BCA",
+      "yog": "2023",
+      "number": "9812337457",
+      "descritions": "",
+      "flipperDescription": "",
+      "interest1": "Traveller",
+      "interest2": "Movie Buff",
+      "instaId": "https://www.instagram.com/tusharrajput._/",
+      "snapchatId": "https://www.facebook.com/tushar.rajput.7564",
+      "linkedinId": "https://www.linkedin.com/in/tushar325/",
+    },
+    {
+      "image": "assets/images/imagep8.png",
+      "name": "Aneesha Sharma",
+      "course": "BA",
+      "yog": "2023",
+      "number": "9874578254",
+      "descritions": "",
+      "flipperDescription": "",
+      "interest1": "Reading",
+      "interest2": "Singing",
+      "instaId": "https://www.instagram.com/aneeshasharma/",
+      "snapchatId": "https://www.facebook.com/funky.aneesha",
+      "linkedinId": "https://www.linkedin.com/in/aneesharma/",
+    },
+    {
+      "image": "assets/images/imagep10.jpg",
+      "name": "Shivangi Sharma",
+      "course": "CSE",
+      "yog": "2025",
+      "number": " 8839845873",
+      "descritions": "",
+      "interest1": "art",
+      "interest2": "dancing",
+      "instaId": "https://www.instagram.com/manvigupta___/",
+      "facebookId": "https://www.instagram.com/manvigupta___/",
+      "linkedinId": "https://www.linkedin.com/in/manvi-gupta-aa430b17a/",
+    },
+    {
+      "image": "assets/images/imagep1.png",
+      "name": "Jasmeet Kaur",
+      "course": "BBA",
+      "yog": "2022",
+      "number": "8465725473",
+      "descritions": "",
+      "flipperDescription": "",
+      "interest1": "Food Lover",
+      "interest2": "Shopaholic",
+      "instaId": "https://www.instagram.com/jasmeetkaur_11/",
+      "snapchatId": "https://www.facebook.com/profile.php?id=100034925682907",
+      "linkedinId": "https://www.linkedin.com/in/jasmeet-kaur-061a6754/",
+    },
+  ];
+
   var listInterest = [
     "Art",
     "Dancing",
@@ -508,7 +594,7 @@ class _BodyState extends State<Body> {
                           back: ClipRRect(
                             borderRadius: BorderRadius.circular(10.0),
                             child: Container(
-                              width: getProportionateScreenWidth(100),
+                                width: getProportionateScreenWidth(100),
                                 decoration: BoxDecoration(
                                   color: Color(0xffffefc5),
                                   image: DecorationImage(
@@ -519,14 +605,15 @@ class _BodyState extends State<Body> {
                                 child: Padding(
                                   padding: EdgeInsets.only(left: 5, top: 2),
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
                                       FittedBox(
                                         child: Text(
                                           Cat1users[index]["name"],
                                           style: TextStyle(
                                             fontSize:
-                                            getProportionateScreenWidth(12),
+                                                getProportionateScreenWidth(12),
                                             color: Colors.black,
                                             fontFamily: "OpenSans",
                                             fontWeight: FontWeight.w800,
@@ -537,7 +624,7 @@ class _BodyState extends State<Body> {
                                         "${Cat1users[index]["course"]},${Cat1users[index]["yog"]}",
                                         style: TextStyle(
                                           fontSize:
-                                          getProportionateScreenWidth(10),
+                                              getProportionateScreenWidth(10),
                                           color: Colors.black,
                                           fontFamily: "OpenSans",
                                           fontWeight: FontWeight.w500,
@@ -613,7 +700,7 @@ class _BodyState extends State<Body> {
                                         ),
                                         Center(
                                           child: Text(
-                                            "CSE,2024",
+                                            "${Cat2users[index]["course"]},${Cat2users[index]["yog"]}",
                                             style: TextStyle(
                                               fontSize:
                                                   getProportionateScreenWidth(
