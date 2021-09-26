@@ -33,9 +33,11 @@ In Bennett Hub we have made the life of students easy by categorizing the studen
 
 and many more..
 
-## Pull Requests
+## Tech Stack Used
 
-I welcome and encourage all pull requests. It usually will take me within 24-48 hours to respond to any issue or request.
+Dart Programming Language
+Flutter
+Firebase
 
 
 ## Created & Maintained By
