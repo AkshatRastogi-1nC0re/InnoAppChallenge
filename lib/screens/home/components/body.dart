@@ -384,6 +384,121 @@ class _BodyState extends State<Body> {
                       crossAxisSpacing: 4.0,
                     ),
                   ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: getProportionateScreenWidth(10),horizontal: getProportionateScreenHeight(20)),
+                    child: Text(
+                      "Designing",
+                      style: TextStyle(
+                        fontSize: getProportionateScreenWidth(26),
+                        fontFamily: "OpenSans",
+                        color: Color(0xff212f44),
+                      ),
+                    ),
+                  ),
+
+                  Container(
+                    height: 350,
+                    width: getProportionateScreenWidth(320),
+                    padding: const EdgeInsets.all(4.0),
+                    child: StaggeredGridView.countBuilder(
+                      physics: NeverScrollableScrollPhysics(),
+                      crossAxisCount: 4,
+                      itemCount: 4,
+                      itemBuilder: (BuildContext context, int index) => new Container(
+                        child: FlipCard(
+                          direction: FlipDirection.HORIZONTAL, // default
+                          front:ClipRRect(
+                            borderRadius: BorderRadius.circular(10.0),
+                            child: Container(
+                              child: Stack(
+                                children: [
+                                  Container(
+                                    child: Image.network(
+                                      "https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg",
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                  Align(
+                                    alignment: Alignment.bottomCenter,
+                                    child: Container(
+                                      height: getProportionateScreenHeight(40),
+                                      width: double.maxFinite,
+                                      color: Colors.white.withOpacity(0.7),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Center(
+                                            child: Text(
+                                              "Yash Sharma",
+                                              style: TextStyle(
+                                                fontSize: getProportionateScreenWidth(12),
+                                                color: Colors.black,
+                                                fontFamily: "OpenSans",
+                                                fontWeight: FontWeight.w800,
+                                              ),
+                                            ),
+                                          ),
+                                          Center(
+                                            child: Text(
+                                              "CSE,2024",
+                                              style: TextStyle(
+                                                fontSize: getProportionateScreenWidth(10),
+                                                fontFamily: "OpenSans",
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          back: ClipRRect(
+                            borderRadius: BorderRadius.circular(10.0),
+                            child: Container(
+                                decoration: BoxDecoration(
+                                  color: Color(0xffffefc5),
+                                  image: DecorationImage(
+                                    image: new AssetImage('assets/images/lightlogo.png'),
+                                  ),
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsets.only(top: getProportionateScreenHeight(15)),
+                                      child: Text(
+                                        "Lorem ipsum dolor sit amet coonsequuntur voluptatum laboruuas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga? ",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(fontFamily: "OpenSans",color: Colors.black,fontSize: getProportionateScreenWidth(11)),
+                                      ),
+                                    ),
+                                    GestureDetector(
+                                      onTap: (){
+                                        print("gfffdfdd");
+                                      },
+                                      child: Align(
+                                        alignment: Alignment.bottomRight,
+                                        child: Text("See More",style: TextStyle(fontFamily: "OpenSans",color: Colors.blue,fontSize: getProportionateScreenWidth(11)),),
+                                      ),
+                                    )
+                                  ],
+                                )
+                            ),
+                          ),
+                        ),
+                      ),
+                      staggeredTileBuilder: (int index) =>
+                      new StaggeredTile.count(2, index.isEven ? 2 : 2),
+                      mainAxisSpacing: 4.0,
+                      crossAxisSpacing: 4.0,
+                    ),
+                  ),
                   SizedBox(height: getProportionateScreenHeight(20),)
 
                 ],
