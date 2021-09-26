@@ -73,7 +73,6 @@ dependencies:
   card_swiper : ^1.0.4
   flutter_staggered_grid_view: ^0.4.0
   flip_card: ^0.5.0
-  hawk_fab_menu: ^0.3.2
   font_awesome_flutter: ^9.1.0
 #  bordered_text: ^2.0.0
 
