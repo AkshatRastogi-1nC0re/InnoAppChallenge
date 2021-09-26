@@ -9,7 +9,7 @@ import '../../constants.dart';
 import 'components/body.dart';
 
 class Info extends StatefulWidget {
-  static String routeName = "/home";
+  static String routeName = "/info";
   @override
   _InfoState createState() => _InfoState();
 }
@@ -24,70 +24,47 @@ class _InfoState extends State<Info> {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async {
-        DateTime currenttime = DateTime.now();
-        bool backbutton = backbuttonpressedTime == null ||
-            currenttime.difference(backbuttonpressedTime) >
-                Duration(seconds: 2);
-        if (backbutton) {
-          backbuttonpressedTime = currenttime;
-          Fluttertoast.showToast(
-              msg: "Double Tap to close App",
-              toastLength: Toast.LENGTH_SHORT,
-              timeInSecForIosWeb: 2,
-              gravity: ToastGravity.BOTTOM);
-          return false;
-        }
-        SystemNavigator.pop();
-        return false;
-      },
-      child: SafeArea(
-        child: Scaffold(
-          body: Builder(
-
-            builder: (BuildContext context) => HawkFabMenu(
-              icon: AnimatedIcons.menu_arrow,
-              fabColor: Colors.transparent,
-              iconColor: Colors.black,
-              items: [
-                HawkFabMenuItem(
-                  label: '',
-                  ontap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => HomeScreen()),
-                    );
-                  },
-                  icon: Icon(
-                    Icons.home_rounded,
-                    size: getProportionateScreenWidth(30),
-                  ),
-                  color: Colors.red,
-                  labelColor: Colors.blue,
+    return SafeArea(
+      child: Scaffold(
+        body: Builder(
+          builder: (BuildContext context) => HawkFabMenu(
+            icon: AnimatedIcons.menu_arrow,
+            fabColor: Colors.transparent,
+            iconColor: Colors.black,
+            items: [
+              HawkFabMenuItem(
+                label: '',
+                ontap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomeScreen()),
+                  );
+                },
+                icon: Icon(
+                  Icons.home_rounded,
+                  size: getProportionateScreenWidth(30),
                 ),
-
-                HawkFabMenuItem(
-                  label: '',
-                  ontap: () {
-
-                  },
-                  icon: Icon(
-                    Icons.account_circle_rounded,
-                    size: getProportionateScreenWidth(30),
-                  ),
+                color: Colors.red,
+                labelColor: Colors.blue,
+              ),
+              HawkFabMenuItem(
+                label: '',
+                ontap: () {},
+                icon: Icon(
+                  Icons.account_circle_rounded,
+                  size: getProportionateScreenWidth(30),
                 ),
-                HawkFabMenuItem(
-                  label: '',
-                  ontap: () {},
-                  icon: Icon(
-                    Icons.info,
-                    size: getProportionateScreenWidth(31),
-                  ),
+              ),
+              HawkFabMenuItem(
+                label: '',
+                ontap: () {},
+                icon: Icon(
+                  Icons.info,
+                  size: getProportionateScreenWidth(31),
                 ),
-              ],
-              body: Body(),
-            ),
+              ),
+            ],
+            body: Body(),
           ),
         ),
       ),
@@ -212,10 +189,10 @@ class _HawkFabMenuState extends State<HawkFabMenu>
                   .items
                   .map<Widget>(
                     (item) => _MenuItemWidget(
-                  item: item,
-                  toggleMenu: _toggleMenu,
-                ),
-              )
+                      item: item,
+                      toggleMenu: _toggleMenu,
+                    ),
+                  )
                   .toList(),
             ),
           ),
@@ -284,7 +261,7 @@ class _MenuItemWidget extends StatelessWidget {
       onTap: this.onTap,
       child: Padding(
         padding:
-        EdgeInsets.symmetric(vertical: getProportionateScreenHeight(8)),
+            EdgeInsets.symmetric(vertical: getProportionateScreenHeight(8)),
         child: GestureDetector(
           onTap: this.onTap,
           child: this.item.icon,
