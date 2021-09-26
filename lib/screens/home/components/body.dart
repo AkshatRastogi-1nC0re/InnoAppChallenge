@@ -62,14 +62,14 @@ class _BodyState extends State<Body> {
   ];
 
   var listInterest = [
-    "art",
-    "dancing",
-    "marketing",
-    "designing",
-    "coding",
-    "gym",
-    "clubbing",
-    "chess"
+    "Art",
+    "Dancing",
+    "Marketing",
+    "Designing",
+    "Coding",
+    "Gym",
+    "Clubbing",
+    "Chess"
   ];
 
   Widget build(BuildContext context) {
@@ -251,7 +251,7 @@ class _BodyState extends State<Body> {
                           ),
                         );
                       },
-                      itemCount: 10,
+                      itemCount: 5,
                       itemWidth: 300.0,
                       layout: SwiperLayout.STACK,
                     )),
