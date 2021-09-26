@@ -23,7 +23,9 @@ class _BodyState extends State<Body> {
       "course": "BBA",
       "yog": "2022",
       "number": "9826723647",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Singing",
       "interest2": "Acting",
@@ -37,7 +39,9 @@ class _BodyState extends State<Body> {
       "course": "BA JMC",
       "yog": "2021",
       "number": "9846758390",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Writer",
       "interest2": "Foodie",
@@ -51,7 +55,9 @@ class _BodyState extends State<Body> {
       "course": "BCA",
       "yog": "2023",
       "number": "9812337457",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Traveller",
       "interest2": "Movie Buff",
@@ -65,7 +71,9 @@ class _BodyState extends State<Body> {
       "course": "BA",
       "yog": "2023",
       "number": "9874578254",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Reading",
       "interest2": "Singing",
@@ -79,7 +87,9 @@ class _BodyState extends State<Body> {
       "course": "CSE",
       "yog": "2025",
       "number": " 8839845873",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "interest1": "art",
       "interest2": "dancing",
       "instaId": "https://www.instagram.com/manvigupta___/",
@@ -92,7 +102,9 @@ class _BodyState extends State<Body> {
       "course": "BBA",
       "yog": "2022",
       "number": "8465725473",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Food Lover",
       "interest2": "Shopaholic",
@@ -106,7 +118,9 @@ class _BodyState extends State<Body> {
       "course": "Computer Science",
       "yog": "2022",
       "number": "8726486266",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Code Geek",
       "interest2": "Avid Reader",
@@ -120,7 +134,9 @@ class _BodyState extends State<Body> {
       "course": "BA LLB",
       "yog": "2025",
       "number": "7364825484",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Fashion",
       "interest2": "Vlogger",
@@ -137,7 +153,9 @@ class _BodyState extends State<Body> {
       "course": "B Tech",
       "yog": "2024",
       "number": "7629635474",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Traveller",
       "interest2": "foodie",
@@ -152,7 +170,9 @@ class _BodyState extends State<Body> {
       "yog": "2022",
       "number": "7693756836",
       "descritions": "",
-      "flipperDescription": "",
+      "flipperDescription":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "interest1": "Bookworm",
       "interest2": "Carismatic",
       "instaId": "https://www.instagram.com/iamaakashmitra/",
@@ -165,7 +185,9 @@ class _BodyState extends State<Body> {
       "course": "CSE",
       "yog": "2025",
       "number": " 8839845873",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "interest1": "art",
       "interest2": "dancing",
       "instaId": "https://www.instagram.com/manvigupta___/",
@@ -178,7 +200,9 @@ class _BodyState extends State<Body> {
       "course": "BBA",
       "yog": "2022",
       "number": "8465725473",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Food Lover",
       "interest2": "Shopaholic",
@@ -192,7 +216,9 @@ class _BodyState extends State<Body> {
       "course": "Computer Science",
       "yog": "2022",
       "number": "8726486266",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Code Geek",
       "interest2": "Avid Reader",
@@ -209,7 +235,9 @@ class _BodyState extends State<Body> {
       "course": "BA",
       "yog": "2022",
       "number": "7693756836",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Bookworm",
       "interest2": "Carismatic",
@@ -223,7 +251,9 @@ class _BodyState extends State<Body> {
       "course": "CSE",
       "yog": "2025",
       "number": " 8839845873",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "interest1": "art",
       "interest2": "dancing",
       "instaId": "https://www.instagram.com/manvigupta___/",
@@ -236,7 +266,9 @@ class _BodyState extends State<Body> {
       "course": "BBA",
       "yog": "2022",
       "number": "8465725473",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Food Lover",
       "interest2": "Shopaholic",
@@ -250,7 +282,9 @@ class _BodyState extends State<Body> {
       "course": "Computer Science",
       "yog": "2022",
       "number": "8726486266",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Code Geek",
       "interest2": "Avid Reader",
@@ -264,7 +298,9 @@ class _BodyState extends State<Body> {
       "course": "B Tech",
       "yog": "2024",
       "number": "7629635474",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Traveller",
       "interest2": "foodie",
@@ -281,7 +317,9 @@ class _BodyState extends State<Body> {
       "course": "BBA",
       "yog": "2022",
       "number": "9826723647",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Singing",
       "interest2": "Acting",
@@ -295,7 +333,9 @@ class _BodyState extends State<Body> {
       "course": "BA JMC",
       "yog": "2021",
       "number": "9846758390",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Writer",
       "interest2": "Foodie",
@@ -309,7 +349,9 @@ class _BodyState extends State<Body> {
       "course": "BCA",
       "yog": "2023",
       "number": "9812337457",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Traveller",
       "interest2": "Movie Buff",
@@ -323,7 +365,9 @@ class _BodyState extends State<Body> {
       "course": "BA",
       "yog": "2023",
       "number": "9874578254",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Reading",
       "interest2": "Singing",
@@ -337,7 +381,9 @@ class _BodyState extends State<Body> {
       "course": "CSE",
       "yog": "2025",
       "number": " 8839845873",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "interest1": "art",
       "interest2": "dancing",
       "instaId": "https://www.instagram.com/manvigupta___/",
@@ -350,7 +396,9 @@ class _BodyState extends State<Body> {
       "course": "BBA",
       "yog": "2022",
       "number": "8465725473",
-      "descritions": "",
+      "descritions":
+          """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
+  We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "flipperDescription": "",
       "interest1": "Food Lover",
       "interest2": "Shopaholic",
