@@ -53,8 +53,8 @@ class _BodyState extends State<Body> {
                             );
                           },
                           itemCount: 3,
-                          pagination: new SwiperPagination(),
-                          control: new SwiperControl(),
+                          pagination: new RectSwiperPaginationBuilder(),
+                          control: new SwiperControl(color: Colors.white ),
                         ),
                       ),
                     ),
@@ -261,3 +261,16 @@ class _BodyState extends State<Body> {
     ]);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
