@@ -74,28 +74,18 @@ class _BodyState extends State<Body> {
                       ),
                     ),
                     Spacer(flex: 3),
-                    Row(
-                      children: [
-                        DefaultButton(
-                          color: Color(0xff212f44),
-                          colour: Colors.white,
-                          text: "Let's make some friends  ->",
-                          press: () {
-                            UserSimplePreferences.setFirst("status");
-                            Navigator.pushNamed(
-                                context, SignInScreen.routeName);
-                          },
-                        ),
-                        Icon(
-                          Icons.arrow_forward_ios_rounded,
-                          color: Colors.white,
-                          size: 40.0,
-                          textDirection: TextDirection.ltr,
-                          semanticLabel:
-                              'Icon', // Announced in accessibility modes (e.g TalkBack/VoiceOver). This label does not show in the UI.
-                        ),
-                      ],
-                    ),
+                    currentPage == 2
+                        ? DefaultButton(
+                            color: Color(0xff212f44),
+                            colour: Colors.white,
+                            text: "Let's make some friends",
+                            press: () {
+                              UserSimplePreferences.setFirst("status");
+                              Navigator.pushNamed(
+                                  context, SignInScreen.routeName);
+                            },
+                          )
+                        : Center(),
                     Spacer(),
                   ],
                 ),
