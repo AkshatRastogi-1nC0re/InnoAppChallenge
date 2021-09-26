@@ -9,13 +9,14 @@ Bennett Hub is a social media application exclusively designed for the students 
 ## App Design
 <img src="https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/Untitled%20design%20(30).png?alt=media&token=46b84570-bfe7-456a-8120-8f1c2c7b8686"  /> 
 
-## Splash Screen
+## App Screens
+
+#Splash Screen
 
   Being New                |        Being Open         |       Being Social
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/13.png?alt=media&token=895bf20f-2ffb-4bb9-8127-b8b8e71c2323)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/15.png?alt=media&token=49564f27-5395-4ec3-8e7b-fc5ea28232aa)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/11.png?alt=media&token=e1eb8faa-0539-4e9f-8bd7-fe1a2d82f09a)
 
-## Home Screen
 
   HomePage                |        HomePage         |       HomePage
 :-------------------------:|:-------------------------:|:-------------------------:
