@@ -19,7 +19,7 @@ class _BodyState extends State<Body> {
   var sampleUsers = [
     {
       "image": "assets/images/imagep4.png",
-      "name": "Manvi Gupta",
+      "name": "John Cena",
       "course": "CA",
       "yog": "2021",
       "interest1": "football",

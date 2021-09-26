@@ -244,7 +244,7 @@ class _BodyState extends State<Body> {
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8.0),
-                child: FaIcon(FontAwesomeIcons.snapchat,
+                child: FaIcon(FontAwesomeIcons.facebook,
                     size: getProportionateScreenWidth(30)),
               ),
               Padding(
