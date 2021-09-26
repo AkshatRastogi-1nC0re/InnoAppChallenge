@@ -224,12 +224,12 @@ class _SignUpFormState extends State<SignUpForm> with ChangeNotifier {
             width: getProportionateScreenWidth(500),
             height: getProportionateScreenHeight(56),
             color: kPrimaryTextColor,
-            child: Text(" Continue ",
+            child: Text("Continue",
                 style: TextStyle(
                     fontSize: getProportionateScreenWidth(18),
                     color: Colors.white)),
             controller: _btnController,
-            onPressed: () async {
+            onPressed: () {
               errors = [];
               if (_formKey.currentState.validate()) {
                 _formKey.currentState.save();
