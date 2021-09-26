@@ -16,9 +16,9 @@ class _BodyState extends State<Body> {
   @override
   GlobalKey<FlipCardState> cardKey = GlobalKey<FlipCardState>();
 
-  var sampleUsers = [
+  List<Map> sampleUsers = [
     {
-      "image": "assets/images/imagep4.png",
+      "image": "assets/images/imagep16.jpg",
       "name": "Akanksha Solanki",
       "course": "BBA",
       "yog": "2022",
@@ -46,7 +46,7 @@ class _BodyState extends State<Body> {
       "linkedinId": "https://www.linkedin.com/in/vansh-singh-00524714a/",
     },
     {
-      "image": "assets/images/imagep3.png",
+      "image": "assets/images/imagep1.png",
       "name": "Tushar Rajput",
       "course": "BCA",
       "yog": "2023",
@@ -74,7 +74,7 @@ class _BodyState extends State<Body> {
       "linkedinId": "https://www.linkedin.com/in/aneesharma/",
     },
     {
-      "image": "assets/images/imagep5.jpg",
+      "image": "assets/images/imagep11.jpg",
       "name": "Shivangi Sharma",
       "course": "CSE",
       "yog": "2025",
@@ -204,7 +204,7 @@ class _BodyState extends State<Body> {
 
   var Cat2users = [
     {
-      "image": "assets/images/imagep15.jpg",
+      "image": "assets/images/imagep10.jpg",
       "name": "Aakash Mitra",
       "course": "BA",
       "yog": "2022",
@@ -218,7 +218,7 @@ class _BodyState extends State<Body> {
       "linkedinId": " https://www.linkedin.com/in/aakash-mitra-11143b171/",
     },
     {
-      "image": "assets/images/imagep16.jpg",
+      "image": "assets/images/imagep11.jpg",
       "name": "Shivangi Sharma",
       "course": "CSE",
       "yog": "2025",
@@ -245,7 +245,7 @@ class _BodyState extends State<Body> {
       "linkedinId": "https://www.linkedin.com/in/jasmeet-kaur-061a6754/",
     },
     {
-      "image": "assets/images/imagep14.jpg",
+      "image": "assets/images/imagep21.jpg",
       "name": "Kanika Sharma",
       "course": "Computer Science",
       "yog": "2022",
@@ -290,7 +290,7 @@ class _BodyState extends State<Body> {
       "linkedinId": "https://www.linkedin.com/in/akanksha-solanki-759b391a5/",
     },
     {
-      "image": "assets/images/imagep17.jpg",
+      "image": "assets/images/imagep7.jpg",
       "name": "Vansh Singh",
       "course": "BA JMC",
       "yog": "2021",
@@ -304,7 +304,7 @@ class _BodyState extends State<Body> {
       "linkedinId": "https://www.linkedin.com/in/vansh-singh-00524714a/",
     },
     {
-      "image": "assets/images/imagep7.jpg",
+      "image": "assets/images/imagep1.png",
       "name": "Tushar Rajput",
       "course": "BCA",
       "yog": "2023",
@@ -318,7 +318,7 @@ class _BodyState extends State<Body> {
       "linkedinId": "https://www.linkedin.com/in/tushar325/",
     },
     {
-      "image": "assets/images/imagep8.jpg",
+      "image": "assets/images/imagep3.png",
       "name": "Aneesha Sharma",
       "course": "BA",
       "yog": "2023",
@@ -332,7 +332,7 @@ class _BodyState extends State<Body> {
       "linkedinId": "https://www.linkedin.com/in/aneesharma/",
     },
     {
-      "image": "assets/images/imagep10.jpg",
+      "image": "assets/images/imagep11.jpg",
       "name": "Shivangi Sharma",
       "course": "CSE",
       "yog": "2025",
@@ -345,7 +345,7 @@ class _BodyState extends State<Body> {
       "linkedinId": "https://www.linkedin.com/in/manvi-gupta-aa430b17a/",
     },
     {
-      "image": "assets/images/imagep1.png",
+      "image": "assets/images/imagep17.jpg",
       "name": "Jasmeet Kaur",
       "course": "BBA",
       "yog": "2022",
@@ -605,17 +605,20 @@ class _BodyState extends State<Body> {
                                 child: Padding(
                                   padding: EdgeInsets.only(left: 5, top: 2),
                                   child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
                                     children: [
                                       Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           FittedBox(
                                             child: Text(
                                               Cat1users[index]["name"],
                                               style: TextStyle(
                                                 fontSize:
-                                                getProportionateScreenWidth(12),
+                                                    getProportionateScreenWidth(
+                                                        12),
                                                 color: Colors.black,
                                                 fontFamily: "OpenSans",
                                                 fontWeight: FontWeight.w800,
@@ -626,7 +629,8 @@ class _BodyState extends State<Body> {
                                             "${Cat1users[index]["course"]},${Cat1users[index]["yog"]}",
                                             style: TextStyle(
                                               fontSize:
-                                              getProportionateScreenWidth(10),
+                                                  getProportionateScreenWidth(
+                                                      10),
                                               color: Colors.black,
                                               fontFamily: "OpenSans",
                                               fontWeight: FontWeight.w500,
@@ -646,8 +650,8 @@ class _BodyState extends State<Body> {
                                                 fontFamily: "OpenSans",
                                                 color: Colors.blue,
                                                 fontSize:
-                                                getProportionateScreenWidth(
-                                                    11)),
+                                                    getProportionateScreenWidth(
+                                                        11)),
                                           ),
                                         ),
                                       )
