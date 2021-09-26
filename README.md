@@ -13,9 +13,10 @@ Bennett Hub is a social media application exclusively designed for the students 
 
   Being New                |        Being Open         |       Being Social
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/13.png?alt=media&token=895bf20f-2ffb-4bb9-8127-b8b8e71c2323)|![](https://github.com/TheAlphamerc/flutter_ecommerce_app/blob/master/screenshots/screenshot_2.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_ecommerce_app/blob/master/screenshots/screenshot_3.jpg?raw=true)
+![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/13.png?alt=media&token=895bf20f-2ffb-4bb9-8127-b8b8e71c2323)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/15.png?alt=media&token=49564f27-5395-4ec3-8e7b-fc5ea28232aa)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/11.png?alt=media&token=e1eb8faa-0539-4e9f-8bd7-fe1a2d82f09a)
 
-## iOS Screenshots
+## Home Screen
+
   HomePage                 |   Product Detail Page        |  Cart Page
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](https://github.com/TheAlphamerc/flutter_ecommerce_app/blob/master/screenshots/screenshot_ios_1.png?raw=true)|![](https://github.com/TheAlphamerc/flutter_ecommerce_app/blob/master/screenshots/screenshot_ios_2.png?raw=true)|![](https://github.com/TheAlphamerc/flutter_ecommerce_app/blob/master/screenshots/screenshot_ios_3.png?raw=true)
