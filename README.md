@@ -21,6 +21,11 @@ Bennett Hub is a social media application exclusively designed for the students 
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/2.png?alt=media&token=c82a1ed5-0baa-4eb2-913e-5b602fc13061)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/1.png?alt=media&token=a9735759-3f30-4120-9f70-20fabdf3ae45)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/aksnsha.png?alt=media&token=10259575-2001-43cf-80ad-28116f488c9a)
 
+
+  About Us                 |        Detail Screen      |       SignIn
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/10.png?alt=media&token=cf08e5eb-c73b-4803-b45d-a69913d89944)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/4.png?alt=media&token=dfa5a8c6-e816-4535-ba66-68a000afcfa8)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/12.png?alt=media&token=89c28d13-bd7c-40ce-883e-3aea7ff1c263)
+
 ## Directory Structure
 ```
 lib
