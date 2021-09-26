@@ -4,6 +4,7 @@ import 'package:socialbennett/components/custom_surfix_icon.dart';
 import 'package:socialbennett/components/default_button.dart';
 import 'package:socialbennett/components/form_error.dart';
 import 'package:socialbennett/providers/auth_provider.dart';
+import 'package:socialbennett/screens/address/address.dart';
 import 'package:socialbennett/screens/home/home_screen.dart';
 import 'package:socialbennett/services/user_services.dart';
 import 'package:socialbennett/services/user_simple_preferences.dart';
@@ -108,7 +109,10 @@ class _SignUpFormState extends State<SignUpForm> with ChangeNotifier {
       uid_real = _auth.user.uid;
       print("Email UID is $uid_real");
       UserSimplePreferences.setAuthKey(uid_real);
-      Navigator.pushNamed(context, HomeScreen.routeName);
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => Address()),
+      );
     }
 
     final BoxDecoration pinPutDecoration = BoxDecoration(
