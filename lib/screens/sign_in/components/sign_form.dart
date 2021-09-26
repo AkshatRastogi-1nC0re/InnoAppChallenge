@@ -80,23 +80,6 @@ class _SignFormState extends State<SignForm> {
                 "Remember me",
                 style: TextStyle(fontSize: getProportionateScreenWidth(13)),
               ),
-              Spacer(),
-              GestureDetector(
-                onTap: () {
-
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Address()),
-                  );
-                  },
-                child: Text(
-                  "Forgot Password",
-                  style: TextStyle(
-                      color: kPrimaryTextColor,
-                      decoration: TextDecoration.underline,
-                      fontSize: getProportionateScreenWidth(13)),
-                ),
-              )
             ],
           ),
           FormError(errors: errors),
