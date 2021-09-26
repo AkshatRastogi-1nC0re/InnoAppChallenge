@@ -118,7 +118,7 @@ class _SignFormState extends State<SignForm> {
               if (_formKey.currentState.validate()) {
                 _formKey.currentState.save();
                 KeyboardUtil.hideKeyboard(context);
-                Navigator.pushNamed(context, HomeScreen.routeName);
+                Navigator.pushNamed(context, LoginSuccessScreen.routeName);
 
                 // try {
                 //   await _auth.signIn(
