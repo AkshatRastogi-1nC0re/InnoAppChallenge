@@ -28,10 +28,6 @@ class _AddressFormState extends State<AddressForm> with ChangeNotifier {
   String selectedValueSingleDialog = "";
   String selected_batch = "";
   String selected_interest = "";
-  String AddressLine1 = "";
-  String AddressLine2 = "";
-  String Addressname = "";
-  List<dynamic> addressmap = [];
   String user_key;
 
   void addError({String error}) {
@@ -49,14 +45,7 @@ class _AddressFormState extends State<AddressForm> with ChangeNotifier {
   }
 
   @override
-  void initState() {
-
-  }
-
-  // String pincode;
-  @override
   Widget build(BuildContext context) {
-
     return Form(
       key: _formKey,
       child: Column(
@@ -101,34 +90,33 @@ class _AddressFormState extends State<AddressForm> with ChangeNotifier {
           ),
           SizedBox(height: getProportionateScreenHeight(30)),
           Container(
-            padding: EdgeInsets.symmetric(
-                vertical: getProportionateScreenHeight(20),
-                horizontal: getProportionateScreenWidth(13)),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30),
-              border: Border.all(
-                color: Color(0xff565656),
+              padding: EdgeInsets.symmetric(
+                  vertical: getProportionateScreenHeight(20),
+                  horizontal: getProportionateScreenWidth(13)),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                border: Border.all(
+                  color: Color(0xff565656),
+                ),
               ),
-            ),
-            child: SearchChoices.multiple(
-              underline: NotGiven(),
-              items: interest(),
-              selectedItems: selectedItemsMultiDialog,
-              hint: Padding(
-                padding:  EdgeInsets.only(left: getProportionateScreenWidth(18)),
-                child: Text("Select any Interest"),
-              ),
-              searchHint: "Select any Interest",
-              onChanged: (value) {
-                setState(() {
-                  selectedItemsMultiDialog = value;
-                });
-              },
-              closeButton: (selectedItems) {
-              },
-              isExpanded: true,
-            )
-          ),
+              child: SearchChoices.multiple(
+                underline: NotGiven(),
+                items: interest(),
+                selectedItems: selectedItemsMultiDialog,
+                hint: Padding(
+                  padding:
+                      EdgeInsets.only(left: getProportionateScreenWidth(18)),
+                  child: Text("Select any Interest"),
+                ),
+                searchHint: "Select any Interest",
+                onChanged: (value) {
+                  setState(() {
+                    selectedItemsMultiDialog = value;
+                  });
+                },
+                closeButton: (selectedItems) {},
+                isExpanded: true,
+              )),
           SizedBox(height: getProportionateScreenHeight(30)),
           FormError(errors: errors),
           SizedBox(height: getProportionateScreenHeight(40)),
@@ -151,5 +139,4 @@ class _AddressFormState extends State<AddressForm> with ChangeNotifier {
       ),
     );
   }
-
 }
