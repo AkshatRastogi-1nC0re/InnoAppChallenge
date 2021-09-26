@@ -5,7 +5,6 @@ import 'package:flip_card/flip_card.dart';
 import 'package:socialbennett/screens/detail/detailscreen.dart';
 
 import '../../../size_config.dart';
-import "dart:math";
 
 class Body extends StatefulWidget {
   @override
@@ -21,65 +20,42 @@ class _BodyState extends State<Body> {
       "image": "assets/images/imagep4.png",
       "name": "Manvi Gupta",
       "course": "CA",
-      "yog": "2021",
-      "interest": ["football", "anime", "coding"]
+      "yog": "2021"
     },
     {
       "image": "assets/images/imagep1.png",
       "name": "Akshat Rastogi",
       "course": "CSE",
-      "yog": "2024",
-      "interest": ["anime", "coding"]
+      "yog": "2024"
     },
     {
       "image": "assets/images/imagep2.png",
       "name": "Aryan Solanki",
       "course": "CSE",
-      "yog": "2024",
-      "interest": ["clubbing", "chess"]
+      "yog": "2024"
     },
     {
       "image": "assets/images/imagep3.png",
       "name": "Yash Sharma",
       "course": "CSE",
-      "yog": "2024",
-      "interest": ["coding", "gym"]
+      "yog": "2024"
     },
     {
       "image": "assets/images/imagep4.png",
       "name": "Manvi Gupta",
       "course": "CA",
-      "yog": "2021",
-      "interest": ["marketing", "designing"]
+      "yog": "2021"
     },
     {
       "image": "assets/images/imagep5.jpg",
       "name": "Shivangi Sharma",
       "course": "CSE",
-      "yog": "2025",
-      "interest": ["art", "dancing"]
+      "yog": "2025"
     },
   ];
 
-  var listInterest = [
-    "art",
-    "dancing",
-    "marketing",
-    "designing",
-    "coding",
-    "gym",
-    "clubbing",
-    "chess"
-  ];
-
   Widget build(BuildContext context) {
-    final _random = new Random();
     return Stack(children: [
-      Positioned(
-        width: getProportionateScreenWidth(55),
-        right: 0,
-        child: Image(image: AssetImage("assets/images/rightbar.png")),
-      ),
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
@@ -197,8 +173,7 @@ class _BodyState extends State<Body> {
                                                           15)),
                                               child: Center(
                                                   child: Text(
-                                                listInterest[_random.nextInt(
-                                                    listInterest.length)],
+                                                "FootBall",
                                                 style: TextStyle(
                                                     color: Color(0xff212f44),
                                                     fontSize:
@@ -231,8 +206,7 @@ class _BodyState extends State<Body> {
                                                           15)),
                                               child: Center(
                                                   child: Text(
-                                                listInterest[_random.nextInt(
-                                                    listInterest.length)],
+                                                "FootBall",
                                                 style: TextStyle(
                                                     color: Color(0xff212f44),
                                                     fontSize:
@@ -251,7 +225,7 @@ class _BodyState extends State<Body> {
                           ),
                         );
                       },
-                      itemCount: 10,
+                      itemCount: sampleUsers.length,
                       itemWidth: 300.0,
                       layout: SwiperLayout.STACK,
                     )),
@@ -260,7 +234,7 @@ class _BodyState extends State<Body> {
                       vertical: getProportionateScreenWidth(10),
                       horizontal: getProportionateScreenHeight(20)),
                   child: Text(
-                    listInterest[_random.nextInt(listInterest.length)],
+                    "Anime",
                     style: TextStyle(
                       fontSize: getProportionateScreenWidth(26),
                       fontFamily: "OpenSans",
@@ -270,7 +244,7 @@ class _BodyState extends State<Body> {
                 ),
                 Container(
                   width: getProportionateScreenWidth(320),
-                  height: getProportionateScreenHeight(130),
+                  height: getProportionateScreenHeight(165),
                   child: ListView.builder(
                       itemCount: 10,
                       scrollDirection: Axis.horizontal,
@@ -282,7 +256,6 @@ class _BodyState extends State<Body> {
                           child: Stack(
                             children: [
                               Container(
-                                height: getProportionateScreenHeight(130),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10.0),
                                   child: Image.network(
@@ -292,7 +265,7 @@ class _BodyState extends State<Body> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.only(left: 5, top: 2),
+                                padding: EdgeInsets.only(left: 5),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -300,7 +273,7 @@ class _BodyState extends State<Body> {
                                       "Yash Sharma",
                                       style: TextStyle(
                                         fontSize:
-                                            getProportionateScreenWidth(12),
+                                            getProportionateScreenWidth(15),
                                         color: Colors.white,
                                         fontFamily: "OpenSans",
                                         fontWeight: FontWeight.w800,
@@ -310,7 +283,7 @@ class _BodyState extends State<Body> {
                                       "CSE,2024",
                                       style: TextStyle(
                                         fontSize:
-                                            getProportionateScreenWidth(10),
+                                            getProportionateScreenWidth(12),
                                         color: Colors.white,
                                         fontFamily: "OpenSans",
                                         fontWeight: FontWeight.w500,
@@ -329,7 +302,7 @@ class _BodyState extends State<Body> {
                       vertical: getProportionateScreenWidth(10),
                       horizontal: getProportionateScreenHeight(20)),
                   child: Text(
-                    listInterest[_random.nextInt(listInterest.length)],
+                    "Coding",
                     style: TextStyle(
                       fontSize: getProportionateScreenWidth(26),
                       fontFamily: "OpenSans",
@@ -358,63 +331,49 @@ class _BodyState extends State<Body> {
                                     ? Align(
                                         alignment: Alignment.bottomCenter,
                                         child: Container(
-                                            height:
-                                                getProportionateScreenHeight(
-                                                    95),
-                                            width: double.maxFinite,
-                                            color:
-                                                Colors.black.withOpacity(0.7),
-                                            child: Column(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment
-                                                      .spaceBetween,
-                                              children: [
-                                                SizedBox(
-                                                  height: 1,
+                                          height:
+                                              getProportionateScreenHeight(55),
+                                          width: double.maxFinite,
+                                          color: Colors.black.withOpacity(0.7),
+                                          child: Column(
+                                            mainAxisSize: MainAxisSize.min,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              SizedBox(
+                                                height:
+                                                    getProportionateScreenHeight(
+                                                        5),
+                                              ),
+                                              Center(
+                                                child: Text(
+                                                  "Yash Sharma",
+                                                  style: TextStyle(
+                                                    fontSize:
+                                                        getProportionateScreenWidth(
+                                                            15),
+                                                    color: Colors.white,
+                                                    fontFamily: "OpenSans",
+                                                    fontWeight: FontWeight.w800,
+                                                  ),
                                                 ),
-                                                Column(
-                                                  mainAxisSize:
-                                                      MainAxisSize.min,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.start,
-                                                  children: [
-                                                    Center(
-                                                      child: Text(
-                                                        "Yash Sharma",
-                                                        style: TextStyle(
-                                                          fontSize:
-                                                              getProportionateScreenWidth(
-                                                                  12),
-                                                          color: Colors.white,
-                                                          fontFamily:
-                                                              "OpenSans",
-                                                          fontWeight:
-                                                              FontWeight.w800,
-                                                        ),
-                                                      ),
-                                                    ),
-                                                    Center(
-                                                      child: Text(
-                                                        "CSE,2024",
-                                                        style: TextStyle(
-                                                          fontSize:
-                                                              getProportionateScreenWidth(
-                                                                  10),
-                                                          color: Colors.white,
-                                                          fontFamily:
-                                                              "OpenSans",
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                        ),
-                                                      ),
-                                                    ),
-                                                    SizedBox(
-                                                      height: 5,
-                                                    ),
-                                                  ],
+                                              ),
+                                              Center(
+                                                child: Text(
+                                                  "CSE,2024",
+                                                  style: TextStyle(
+                                                    fontSize:
+                                                        getProportionateScreenWidth(
+                                                            12),
+                                                    color: Colors.white,
+                                                    fontFamily: "OpenSans",
+                                                    fontWeight: FontWeight.w500,
+                                                  ),
                                                 ),
-                                              ],
-                                            )),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
                                       )
                                     : Center(),
                                 Container(
@@ -428,7 +387,7 @@ class _BodyState extends State<Body> {
                                         alignment: Alignment.bottomCenter,
                                         child: Container(
                                           height:
-                                              getProportionateScreenHeight(40),
+                                              getProportionateScreenHeight(55),
                                           width: double.maxFinite,
                                           color: Colors.white.withOpacity(0.7),
                                           child: Column(
@@ -442,7 +401,7 @@ class _BodyState extends State<Body> {
                                                   style: TextStyle(
                                                     fontSize:
                                                         getProportionateScreenWidth(
-                                                            12),
+                                                            15),
                                                     color: Colors.black,
                                                     fontFamily: "OpenSans",
                                                     fontWeight: FontWeight.w800,
@@ -455,7 +414,7 @@ class _BodyState extends State<Body> {
                                                   style: TextStyle(
                                                     fontSize:
                                                         getProportionateScreenWidth(
-                                                            10),
+                                                            12),
                                                     fontFamily: "OpenSans",
                                                     color: index % 2 == 0
                                                         ? Colors.white
@@ -497,7 +456,7 @@ class _BodyState extends State<Body> {
                                           fontFamily: "OpenSans",
                                           color: Colors.black,
                                           fontSize:
-                                              getProportionateScreenWidth(11)),
+                                              getProportionateScreenWidth(12)),
                                     ),
                                   ),
                                   GestureDetector(
@@ -510,10 +469,7 @@ class _BodyState extends State<Body> {
                                         "See More",
                                         style: TextStyle(
                                             fontFamily: "OpenSans",
-                                            color: Colors.blue,
-                                            fontSize:
-                                                getProportionateScreenWidth(
-                                                    11)),
+                                            color: Colors.blue),
                                       ),
                                     ),
                                   )
@@ -527,125 +483,11 @@ class _BodyState extends State<Body> {
                     mainAxisSpacing: 4.0,
                     crossAxisSpacing: 4.0,
                   ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(vertical: getProportionateScreenWidth(10),horizontal: getProportionateScreenHeight(20)),
-                    child: Text(
-                      "Designing",
-                      style: TextStyle(
-                        fontSize: getProportionateScreenWidth(26),
-                        fontFamily: "OpenSans",
-                        color: Color(0xff212f44),
-                      ),
-                    ),
-                  ),
-
-                  Container(
-                    height: 350,
-                    width: getProportionateScreenWidth(320),
-                    padding: const EdgeInsets.all(4.0),
-                    child: StaggeredGridView.countBuilder(
-                      physics: NeverScrollableScrollPhysics(),
-                      crossAxisCount: 4,
-                      itemCount: 4,
-                      itemBuilder: (BuildContext context, int index) => new Container(
-                        child: FlipCard(
-                          direction: FlipDirection.HORIZONTAL, // default
-                          front:ClipRRect(
-                            borderRadius: BorderRadius.circular(10.0),
-                            child: Container(
-                              child: Stack(
-                                children: [
-                                  Container(
-                                    child: Image.network(
-                                      "https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg",
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                  Align(
-                                    alignment: Alignment.bottomCenter,
-                                    child: Container(
-                                      height: getProportionateScreenHeight(40),
-                                      width: double.maxFinite,
-                                      color: Colors.white.withOpacity(0.7),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.min,
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Center(
-                                            child: Text(
-                                              "Yash Sharma",
-                                              style: TextStyle(
-                                                fontSize: getProportionateScreenWidth(12),
-                                                color: Colors.black,
-                                                fontFamily: "OpenSans",
-                                                fontWeight: FontWeight.w800,
-                                              ),
-                                            ),
-                                          ),
-                                          Center(
-                                            child: Text(
-                                              "CSE,2024",
-                                              style: TextStyle(
-                                                fontSize: getProportionateScreenWidth(10),
-                                                fontFamily: "OpenSans",
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.w500,
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          back: ClipRRect(
-                            borderRadius: BorderRadius.circular(10.0),
-                            child: Container(
-                                decoration: BoxDecoration(
-                                  color: Color(0xffffefc5),
-                                  image: DecorationImage(
-                                    image: new AssetImage('assets/images/lightlogo.png'),
-                                  ),
-                                ),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsets.only(top: getProportionateScreenHeight(15)),
-                                      child: Text(
-                                        "Lorem ipsum dolor sit amet coonsequuntur voluptatum laboruuas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga? ",
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(fontFamily: "OpenSans",color: Colors.black,fontSize: getProportionateScreenWidth(11)),
-                                      ),
-                                    ),
-                                    GestureDetector(
-                                      onTap: (){
-                                        print("gfffdfdd");
-                                      },
-                                      child: Align(
-                                        alignment: Alignment.bottomRight,
-                                        child: Text("See More",style: TextStyle(fontFamily: "OpenSans",color: Colors.blue,fontSize: getProportionateScreenWidth(11)),),
-                                      ),
-                                    )
-                                  ],
-                                )
-                            ),
-                          ),
-                        ),
-                      ),
-                      staggeredTileBuilder: (int index) =>
-                      new StaggeredTile.count(2, index.isEven ? 2 : 2),
-                      mainAxisSpacing: 4.0,
-                      crossAxisSpacing: 4.0,
-                    ),
-                  ),
-                  SizedBox(height: getProportionateScreenHeight(20),)
-
-                ],
-              ),
+                ),
+                SizedBox(
+                  height: getProportionateScreenHeight(20),
+                )
+              ],
             ),
           ),
         ),
