@@ -709,7 +709,14 @@ class _BodyState extends State<Body> {
                                       ),
                                       GestureDetector(
                                         onTap: () {
-                                          print("gfffdfdd");
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    DetailScreen(
+                                                        dict:
+                                                            Cat1users[index])),
+                                          );
                                         },
                                         child: Align(
                                           alignment: Alignment.bottomRight,
