@@ -48,51 +48,51 @@ class _SignUpFormState extends State<SignUpForm> with ChangeNotifier {
       });
   }
 
-  _verifyPhone() async {
-    await auth.verifyPhoneNumber(
-        phoneNumber: '+91' + number,
-        verificationCompleted: (PhoneAuthCredential credential) async {
-          await FirebaseAuth.instance
-              .signInWithCredential(credential)
-              .then((value) async {
-            if (value.user != null) {
-              print("nothinggggg");
-            }
-          });
-        },
-        verificationFailed: (FirebaseAuthException e) {
-          print("erorrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr");
-          print(e.message);
-        },
-        codeSent: (String verficationID, int resendToken) {
-          setState(() {
-            _verificationCode = verficationID;
-          });
-        },
-        codeAutoRetrievalTimeout: (String verificationID) {
-          setState(() {
-            _verificationCode = verificationID;
-          });
-        },
-        timeout: Duration(seconds: 30));
-  }
+  // _verifyPhone() async {
+  //   await auth.verifyPhoneNumber(
+  //       phoneNumber: '+91' + number,
+  //       verificationCompleted: (PhoneAuthCredential credential) async {
+  //         await FirebaseAuth.instance
+  //             .signInWithCredential(credential)
+  //             .then((value) async {
+  //           if (value.user != null) {
+  //             print("nothinggggg");
+  //           }
+  //         });
+  //       },
+  //       verificationFailed: (FirebaseAuthException e) {
+  //         print("erorrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr");
+  //         print(e.message);
+  //       },
+  //       codeSent: (String verficationID, int resendToken) {
+  //         setState(() {
+  //           _verificationCode = verficationID;
+  //         });
+  //       },
+  //       codeAutoRetrievalTimeout: (String verificationID) {
+  //         setState(() {
+  //           _verificationCode = verificationID;
+  //         });
+  //       },
+  //       timeout: Duration(seconds: 30));
+  // }
 
-  Future<bool> Query(num) async {
-    var bo = false;
-    QuerySnapshot snapshot =
-        await FirebaseFirestore.instance.collection("users").get();
-    snapshot.docs.forEach((document) {
-      if (document.exists) {
-        if (document['number'] == num) {
-          bo = true;
-          return;
-        }
-      } else {
-        print('document does not exist');
-      }
-    });
-    return bo;
-  }
+  // Future<bool> Query(num) async {
+  //   var bo = false;
+  //   QuerySnapshot snapshot =
+  //       await FirebaseFirestore.instance.collection("users").get();
+  //   snapshot.docs.forEach((document) {
+  //     if (document.exists) {
+  //       if (document['number'] == num) {
+  //         bo = true;
+  //         return;
+  //       }
+  //     } else {
+  //       print('document does not exist');
+  //     }
+  //   });
+  //   return bo;
+  // }
 
   String _verificationCode;
   String number;
@@ -102,18 +102,18 @@ class _SignUpFormState extends State<SignUpForm> with ChangeNotifier {
     UserServices _userServices = UserServices();
     String phone_uid;
 
-    Future<void> createNewUser(number, name, password) async {
-      String uid_real;
-      var tempemail = number + "@orev.user";
-      await _auth.signUp(email: tempemail, password: password);
-      uid_real = _auth.user.uid;
-      print("Email UID is $uid_real");
-      UserSimplePreferences.setAuthKey(uid_real);
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => Address()),
-      );
-    }
+    // Future<void> createNewUser(number, name, password) async {
+    //   String uid_real;
+    //   var tempemail = number + "@orev.user";
+    //   await _auth.signUp(email: tempemail, password: password);
+    //   uid_real = _auth.user.uid;
+    //   print("Email UID is $uid_real");
+    //   UserSimplePreferences.setAuthKey(uid_real);
+    //   Navigator.push(
+    //     context,
+    //     MaterialPageRoute(builder: (context) => Address()),
+    //   );
+    // }
 
     final BoxDecoration pinPutDecoration = BoxDecoration(
       color: kPrimaryTextColor,
@@ -141,7 +141,7 @@ class _SignUpFormState extends State<SignUpForm> with ChangeNotifier {
                 if (value.user != null) {
                   phone_uid = auth.currentUser.uid;
                   auth.signOut();
-                  createNewUser(number, Name, password);
+                  // createNewUser(number, Name, password);
                 }
               });
             } catch (e) {
@@ -233,15 +233,7 @@ class _SignUpFormState extends State<SignUpForm> with ChangeNotifier {
               errors = [];
               if (_formKey.currentState.validate()) {
                 _formKey.currentState.save();
-                // if all are valid then go to success screen
-                var bo = await Query("+91" + number);
-                if (bo) {
-                  addError(error: kUserExistsError);
-                } else {
-                  _verifyPhone();
-                  _showDialog();
-                }
-                // Navigator.pushNamed(context, CompleteProfileScreen.routeName);
+                Navigator.pushNamed(context, Address.routeName);
               }
             },
           ),
