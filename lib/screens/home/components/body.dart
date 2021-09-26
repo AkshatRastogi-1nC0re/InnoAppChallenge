@@ -26,7 +26,7 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription": "I’m the exception",
       "interest1": "Singing",
       "interest2": "Acting",
       "instaId": "https://www.instagram.com/akanksha_solanki/",
@@ -42,7 +42,7 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription": "Humble, with just a hint of Kanye",
       "interest1": "Writer",
       "interest2": "Foodie",
       "instaId": "https://www.instagram.com/vanshsingh._/",
@@ -58,7 +58,8 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription":
+          "I’m actually not funny. I’m just really mean but people always think I’m joking",
       "interest1": "Traveller",
       "interest2": "Movie Buff",
       "instaId": "https://www.instagram.com/tusharrajput._/",
@@ -74,7 +75,7 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription": "Trying to watch more sunsets than Netflix",
       "interest1": "Reading",
       "interest2": "Singing",
       "instaId": "https://www.instagram.com/aneeshasharma/",
@@ -90,6 +91,7 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
+      "flipperDescription": "Trying to watch more sunsets than Netflix",
       "interest1": "art",
       "interest2": "dancing",
       "instaId": "https://www.instagram.com/manvigupta___/",
@@ -105,7 +107,8 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription":
+          "I might not know who I am but I know where I want to be. Right here in paradise.",
       "interest1": "Food Lover",
       "interest2": "Shopaholic",
       "instaId": "https://www.instagram.com/jasmeetkaur_11/",
@@ -121,7 +124,8 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription":
+          "It’s better to be a lonely lion than a popular sheep",
       "interest1": "Code Geek",
       "interest2": "Avid Reader",
       "instaId": "https://www.instagram.com/kanikashrma09/",
@@ -137,7 +141,7 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription": "I strive to impress myself",
       "interest1": "Fashion",
       "interest2": "Vlogger",
       "instaId": "https://www.instagram.com/ianuragsinghania/",
@@ -156,7 +160,7 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription": "I strive to impress myself",
       "interest1": "Traveller",
       "interest2": "foodie",
       "instaId": "https://www.instagram.com/sauuumyaaa/",
@@ -169,10 +173,11 @@ class _BodyState extends State<Body> {
       "course": "BA",
       "yog": "2022",
       "number": "7693756836",
-      "descritions": "",
-      "flipperDescription":
+      "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
+      "flipperDescription":
+          "I don’t care what people think of me. This is me in rawest form.",
       "interest1": "Bookworm",
       "interest2": "Carismatic",
       "instaId": "https://www.instagram.com/iamaakashmitra/",
@@ -189,6 +194,8 @@ class _BodyState extends State<Body> {
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
       "interest1": "art",
+      "flipperDescription":
+          "I don’t care what people think of me. This is me in rawest form.",
       "interest2": "dancing",
       "instaId": "https://www.instagram.com/manvigupta___/",
       "facebookId": "https://www.instagram.com/manvigupta___/",
@@ -203,7 +210,7 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription": "Anything but predictable....Nah!",
       "interest1": "Food Lover",
       "interest2": "Shopaholic",
       "instaId": "https://www.instagram.com/jasmeetkaur_11/",
@@ -219,7 +226,8 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription":
+          "I’m actually not funny. I’m just really mean but people always think I’m joking",
       "interest1": "Code Geek",
       "interest2": "Avid Reader",
       "instaId": "https://www.instagram.com/kanikashrma09/",
@@ -238,7 +246,8 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription":
+          "I’m actually not funny. I’m just really mean but people always think I’m joking",
       "interest1": "Bookworm",
       "interest2": "Carismatic",
       "instaId": "https://www.instagram.com/iamaakashmitra/",
@@ -250,10 +259,12 @@ class _BodyState extends State<Body> {
       "name": "Shivangi Sharma",
       "course": "CSE",
       "yog": "2025",
-      "number": " 8839845873",
+      "number": "8839845873",
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
+      "flipperDescription":
+          "I might not know who I am but I know where I want to be. Right here in paradise.",
       "interest1": "art",
       "interest2": "dancing",
       "instaId": "https://www.instagram.com/manvigupta___/",
@@ -269,7 +280,8 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription":
+          "I’m actually not funny. I’m just really mean but people always think I’m joking",
       "interest1": "Food Lover",
       "interest2": "Shopaholic",
       "instaId": "https://www.instagram.com/jasmeetkaur_11/",
@@ -285,7 +297,8 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription":
+          "I’m actually not funny. I’m just really mean but people always think I’m joking",
       "interest1": "Code Geek",
       "interest2": "Avid Reader",
       "instaId": "https://www.instagram.com/kanikashrma09/",
@@ -301,7 +314,8 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription":
+          "I’m actually not funny. I’m just really mean but people always think I’m joking",
       "interest1": "Traveller",
       "interest2": "foodie",
       "instaId": "https://www.instagram.com/sauuumyaaa/",
@@ -320,7 +334,8 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription":
+          "I’m actually not funny. I’m just really mean but people always think I’m joking",
       "interest1": "Singing",
       "interest2": "Acting",
       "instaId": "https://www.instagram.com/akanksha_solanki/",
@@ -336,7 +351,8 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription":
+          "I’m actually not funny. I’m just really mean but people always think I’m joking",
       "interest1": "Writer",
       "interest2": "Foodie",
       "instaId": "https://www.instagram.com/vanshsingh._/",
@@ -352,7 +368,8 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription":
+          "I’m actually not funny. I’m just really mean but people always think I’m joking",
       "interest1": "Traveller",
       "interest2": "Movie Buff",
       "instaId": "https://www.instagram.com/tusharrajput._/",
@@ -368,7 +385,8 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription":
+          "I’m actually not funny. I’m just really mean but people always think I’m joking",
       "interest1": "Reading",
       "interest2": "Singing",
       "instaId": "https://www.instagram.com/aneeshasharma/",
@@ -384,6 +402,8 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
+      "flipperDescription":
+          "I don’t care what people think of me. This is me in rawest form.",
       "interest1": "art",
       "interest2": "dancing",
       "instaId": "https://www.instagram.com/manvigupta___/",
@@ -399,7 +419,8 @@ class _BodyState extends State<Body> {
       "descritions":
           """I love meeting new faces and always in pursuit of doing different things and connecting with like-minded people.
   We are going to be a hit from the start if you're like me too and enjoy exploring different stuff.""",
-      "flipperDescription": "",
+      "flipperDescription":
+          "I’m actually not funny. I’m just really mean but people always think I’m joking",
       "interest1": "Food Lover",
       "interest2": "Shopaholic",
       "instaId": "https://www.instagram.com/jasmeetkaur_11/",
@@ -810,7 +831,7 @@ class _BodyState extends State<Body> {
                                     padding: EdgeInsets.only(
                                         top: getProportionateScreenHeight(15)),
                                     child: Text(
-                                      "Lorem ipsum dolor sit amet coonsequuntur voluptatum laboruuas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga? ",
+                                      Cat2users[index]["flipperDescription"],
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                           fontFamily: "OpenSans",
@@ -821,7 +842,12 @@ class _BodyState extends State<Body> {
                                   ),
                                   GestureDetector(
                                     onTap: () {
-                                      print("gfffdfdd");
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => DetailScreen(
+                                                dict: Cat2users[index])),
+                                      );
                                     },
                                     child: Align(
                                       alignment: Alignment.bottomRight,
@@ -1016,7 +1042,7 @@ class _BodyState extends State<Body> {
                                     padding: EdgeInsets.only(
                                         top: getProportionateScreenHeight(15)),
                                     child: Text(
-                                      "Lorem ipsum dolor sit amet coonsequuntur voluptatum laboruuas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga? ",
+                                      Cat3users[index]["flipperDescription"],
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                           fontFamily: "OpenSans",
@@ -1027,7 +1053,12 @@ class _BodyState extends State<Body> {
                                   ),
                                   GestureDetector(
                                     onTap: () {
-                                      print("gfffdfdd");
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => DetailScreen(
+                                                dict: Cat3users[index])),
+                                      );
                                     },
                                     child: Align(
                                       alignment: Alignment.bottomRight,
