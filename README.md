@@ -35,8 +35,8 @@ and many more..
 
 ## Tech Stack Used
 
-Dart Programming Language
-Flutter
+Dart Programming Language,
+Flutter, and
 Firebase
 
 
