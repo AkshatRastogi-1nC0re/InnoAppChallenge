@@ -1,27 +1,20 @@
-import 'package:card_swiper/card_swiper.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:socialbennett/components/coustom_bottom_nav_bar.dart';
-import 'package:socialbennett/components/updateavailablescreen.dart';
-import 'package:socialbennett/enums.dart';
-import 'package:socialbennett/screens/info/info.dart';
-import 'package:socialbennett/services/product_services.dart';
-import 'package:package_info_plus/package_info_plus.dart';
+import 'package:socialbennett/screens/home/home_screen.dart';
 import 'package:socialbennett/size_config.dart';
 
 import 'dart:ui' as ui;
 import '../../constants.dart';
 import 'components/body.dart';
 
-class HomeScreen extends StatefulWidget {
+class Info extends StatefulWidget {
   static String routeName = "/home";
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _InfoState createState() => _InfoState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _InfoState extends State<Info> {
   @override
   void initState() {
     super.initState();
@@ -52,8 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: SafeArea(
         child: Scaffold(
           body: Builder(
-            // builder is used only for the snackbar, if you don't want the snackbar you can remove
-            // Builder from the tree
+
             builder: (BuildContext context) => HawkFabMenu(
               icon: AnimatedIcons.menu_arrow,
               fabColor: Colors.transparent,
@@ -61,7 +53,12 @@ class _HomeScreenState extends State<HomeScreen> {
               items: [
                 HawkFabMenuItem(
                   label: '',
-                  ontap: () {},
+                  ontap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomeScreen()),
+                    );
+                  },
                   icon: Icon(
                     Icons.home_rounded,
                     size: getProportionateScreenWidth(30),
@@ -72,7 +69,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
                 HawkFabMenuItem(
                   label: '',
-                  ontap: () {},
+                  ontap: () {
+
+                  },
                   icon: Icon(
                     Icons.account_circle_rounded,
                     size: getProportionateScreenWidth(30),
@@ -80,12 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 HawkFabMenuItem(
                   label: '',
-                  ontap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Info()),
-                    );
-                  },
+                  ontap: () {},
                   icon: Icon(
                     Icons.info,
                     size: getProportionateScreenWidth(31),
@@ -218,10 +212,10 @@ class _HawkFabMenuState extends State<HawkFabMenu>
                   .items
                   .map<Widget>(
                     (item) => _MenuItemWidget(
-                      item: item,
-                      toggleMenu: _toggleMenu,
-                    ),
-                  )
+                  item: item,
+                  toggleMenu: _toggleMenu,
+                ),
+              )
                   .toList(),
             ),
           ),
@@ -290,7 +284,7 @@ class _MenuItemWidget extends StatelessWidget {
       onTap: this.onTap,
       child: Padding(
         padding:
-            EdgeInsets.symmetric(vertical: getProportionateScreenHeight(8)),
+        EdgeInsets.symmetric(vertical: getProportionateScreenHeight(8)),
         child: GestureDetector(
           onTap: this.onTap,
           child: this.item.icon,
