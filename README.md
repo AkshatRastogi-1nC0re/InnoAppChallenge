@@ -7,7 +7,7 @@ Bennett Hub is a social media application exclusively designed for the students 
 
 
 ## App Design
-<img src="https://cdn.dribbble.com/users/2432994/screenshots/10446127/media/fa0a9ce348e0bfa18b00ba2240543064.png"  /> 
+<img src="https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/Untitled%20design%20(30).png?alt=media&token=46b84570-bfe7-456a-8120-8f1c2c7b8686"  /> 
 
 ## Android Screenshots
 
