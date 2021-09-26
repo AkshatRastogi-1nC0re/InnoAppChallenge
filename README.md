@@ -23,13 +23,13 @@ In Bennett Hub we have made the life of students easy by categorizing the studen
 ![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/2.png?alt=media&token=c82a1ed5-0baa-4eb2-913e-5b602fc13061)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/1.png?alt=media&token=a9735759-3f30-4120-9f70-20fabdf3ae45)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/aksnsha.png?alt=media&token=10259575-2001-43cf-80ad-28116f488c9a)
 
 
-  About Us                 |        Detail Screen      |       SignIn
+  About Us                 |        Detail Screen      |       Menu
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/10.png?alt=media&token=cf08e5eb-c73b-4803-b45d-a69913d89944)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/4.png?alt=media&token=dfa5a8c6-e816-4535-ba66-68a000afcfa8)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/12.png?alt=media&token=89c28d13-bd7c-40ce-883e-3aea7ff1c263)
+![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/10.png?alt=media&token=cf08e5eb-c73b-4803-b45d-a69913d89944)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/4.png?alt=media&token=dfa5a8c6-e816-4535-ba66-68a000afcfa8)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/hamburger.png?alt=media&token=09d25d46-f024-4d2b-8b7a-3da73f7f4ce0)
  
-  Menu                     |        Splash Screen      |       SignUp
+  Splash Screen                     |        SignIn      |       SignUp
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/hamburger.png?alt=media&token=09d25d46-f024-4d2b-8b7a-3da73f7f4ce0)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/splashhh.png?alt=media&token=9890742d-7b4b-4617-9f03-4825e2806a11)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/14.png?alt=media&token=dfb70925-aec6-4700-9d35-874742769481)
+![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/splashhh.png?alt=media&token=9890742d-7b4b-4617-9f03-4825e2806a11)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/12.png?alt=media&token=89c28d13-bd7c-40ce-883e-3aea7ff1c263)|![](https://firebasestorage.googleapis.com/v0/b/innoappchallenge.appspot.com/o/14.png?alt=media&token=dfb70925-aec6-4700-9d35-874742769481)
 
 and many more..
 
