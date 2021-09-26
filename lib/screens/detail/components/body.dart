@@ -313,6 +313,7 @@ class _BodyState extends State<Body> {
                     launchURLInsta();
                   },
                   child: FaIcon(FontAwesomeIcons.instagramSquare,
+                      color: Color(0xff212f44),
                       size: getProportionateScreenWidth(30)),
                 ),
               ),
@@ -323,6 +324,7 @@ class _BodyState extends State<Body> {
                     launchURLFacebook();
                   },
                   child: FaIcon(FontAwesomeIcons.facebook,
+                      color: Color(0xff212f44),
                       size: getProportionateScreenWidth(30)),
                 ),
               ),
@@ -333,6 +335,7 @@ class _BodyState extends State<Body> {
                     launchURLLinkedIn();
                   },
                   child: FaIcon(FontAwesomeIcons.linkedin,
+                      color: Color(0xff212f44),
                       size: getProportionateScreenWidth(30)),
                 ),
               ),
@@ -349,8 +352,9 @@ class _BodyState extends State<Body> {
               child: Text(
                 "${dict["name"]} !",
                 style: TextStyle(
+                  letterSpacing: 2,
                   fontFamily: "Playlist",
-                  fontSize: getProportionateScreenWidth(40),
+                  fontSize: getProportionateScreenWidth(34),
                   color: Color(0xff212f44),
                 ),
               ),
