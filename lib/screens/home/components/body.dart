@@ -20,7 +20,6 @@ class _BodyState extends State<Body> {
       children: [
         Positioned(
           width: getProportionateScreenWidth(55),
-
           right: 0,
           child: Image(
               image: AssetImage("assets/images/rightbar.png")),
