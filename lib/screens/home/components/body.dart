@@ -831,7 +831,8 @@ class _BodyState extends State<Body> {
                                                   children: [
                                                     Center(
                                                       child: Text(
-                                                        "Yash Sharma",
+                                                        Cat3users[index]
+                                                            ["name"],
                                                         style: TextStyle(
                                                           fontSize:
                                                               getProportionateScreenWidth(
@@ -846,7 +847,7 @@ class _BodyState extends State<Body> {
                                                     ),
                                                     Center(
                                                       child: Text(
-                                                        "CSE,2024",
+                                                        "${Cat3users[index]["course"]},${Cat3users[index]["yog"]}",
                                                         style: TextStyle(
                                                           fontSize:
                                                               getProportionateScreenWidth(
@@ -869,8 +870,8 @@ class _BodyState extends State<Body> {
                                       )
                                     : Center(),
                                 Container(
-                                  child: Image.network(
-                                    "https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg",
+                                  child: Image.asset(
+                                    Cat3users[index]["image"],
                                     fit: BoxFit.fill,
                                   ),
                                 ),
@@ -889,7 +890,7 @@ class _BodyState extends State<Body> {
                                             children: [
                                               Center(
                                                 child: Text(
-                                                  "Yash Sharma",
+                                                  Cat3users[index]["name"],
                                                   style: TextStyle(
                                                     fontSize:
                                                         getProportionateScreenWidth(
@@ -902,7 +903,7 @@ class _BodyState extends State<Body> {
                                               ),
                                               Center(
                                                 child: Text(
-                                                  "CSE,2024",
+                                                  "${Cat3users[index]["course"]},${Cat3users[index]["yog"]}",
                                                   style: TextStyle(
                                                     fontSize:
                                                         getProportionateScreenWidth(
