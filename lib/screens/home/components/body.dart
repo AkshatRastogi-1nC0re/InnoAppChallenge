@@ -569,8 +569,8 @@ class _BodyState extends State<Body> {
                             child: Stack(
                               children: [
                                 Container(
-                                  child: Image.network(
-                                    "https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg",
+                                  child: Image.asset(
+                                    Cat2users[index]["image"],
                                     fit: BoxFit.fill,
                                   ),
                                 ),
@@ -587,7 +587,7 @@ class _BodyState extends State<Body> {
                                       children: [
                                         Center(
                                           child: Text(
-                                            "Yash Sharma",
+                                            Cat2users[index]["name"],
                                             style: TextStyle(
                                               fontSize:
                                                   getProportionateScreenWidth(
