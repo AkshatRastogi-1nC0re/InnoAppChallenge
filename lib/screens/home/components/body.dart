@@ -22,35 +22,40 @@ class _BodyState extends State<Body> {
       "name": "Manvi Gupta",
       "course": "CA",
       "yog": "2021",
-      "interest": ["football", "anime", "coding"]
+      "interest1": "football",
+      "interest2": "coding",
     },
     {
       "image": "assets/images/imagep1.png",
       "name": "Akshat Rastogi",
       "course": "CSE",
       "yog": "2024",
-      "interest": ["anime", "coding"]
+      "interest1": "anime",
+      "interest2": "coding",
     },
     {
       "image": "assets/images/imagep2.png",
       "name": "Aryan Solanki",
       "course": "CSE",
       "yog": "2024",
-      "interest": ["clubbing", "chess"]
+      "interest1": "clubbing",
+      "interest2": "chess",
     },
     {
       "image": "assets/images/imagep3.png",
       "name": "Yash Sharma",
       "course": "CSE",
       "yog": "2024",
-      "interest": ["coding", "gym"]
+      "interest1": "coding",
+      "interest2": "gym",
     },
     {
       "image": "assets/images/imagep5.jpg",
       "name": "Shivangi Sharma",
       "course": "CSE",
       "yog": "2025",
-      "interest": ["art", "dancing"]
+      "interest1": "art",
+      "interest2": "dancing",
     },
   ];
 
@@ -190,8 +195,7 @@ class _BodyState extends State<Body> {
                                                           15)),
                                               child: Center(
                                                   child: Text(
-                                                listInterest[_random.nextInt(
-                                                    listInterest.length)],
+                                                sampleUsers[index]["interest1"],
                                                 style: TextStyle(
                                                     color: Color(0xff212f44),
                                                     fontSize:
@@ -224,8 +228,7 @@ class _BodyState extends State<Body> {
                                                           15)),
                                               child: Center(
                                                   child: Text(
-                                                listInterest[_random.nextInt(
-                                                    listInterest.length)],
+                                                sampleUsers[index]["interest2"],
                                                 style: TextStyle(
                                                     color: Color(0xff212f44),
                                                     fontSize:
