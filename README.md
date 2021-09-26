@@ -3,8 +3,7 @@
 
 ## Bennett Hub App [![GitHub stars](https://img.shields.io/github/stars/AkshatRastogi-1nC0re/InnoAppChallenge?style=social)](https://github.com/login?return_to=%2FAkshatRastogi-1nC0re%InnoAppChallenge) ![GitHub forks](https://img.shields.io/github/forks/AkshatRastogi-1nC0re/InnoAppChallenge?style=social) ![GitHub last commit](https://img.shields.io/github/last-commit/AkshatRastogi-1nC0re/InnoAppChallenge) ![Dart CI](https://github.com/TheAlphamerc/flutter_ecommerce_app/workflows/Dart%20CI/badge.svg) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com//AkshatRastogi-1nC0re/InnoAppChallenge) 
 
-E-Commerce app is a design implementaion of [E-commerce App](https://dribbble.com/shots/10446127-E-commerce-App-Exploration/attachments/2283107?mode=media) designed by [Imran](https://dribbble.com/Saif_Uddin_Imran)
-
+Bennett Hub is a social media application exclusively designed for the students of Bennett University. This application would be a blessing for many who want to expand their social circle and make new friends including their batchmates, students from different courses, their seniors, their juniors basically all who are part of the university.
 
 
 ## Download App ![GitHub All Releases](https://img.shields.io/github/downloads/Thealphamerc/flutter_ecommerce_app/total?color=green)
