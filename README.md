@@ -22,16 +22,19 @@ Firebase
 
 ## Created & Maintained By
 
+[Aryan Solanki](https://github.com/Aryan-Solanki)
+Email: [solankiaryan5@gmail.com](mailto:solankiaryan5@gmail.com)
+
 [Akshat Rastogi](https://github.com/AkshatRastogi-1nC0re)
 Email: [E20CSE003@bennett.edu.in](mailto:E20CSE003@bennett.edu.in)
 
-[Aryan Solanki](https://github.com/Aryan-Solanki)
-Email: [E20CSE157@bennett.edu.in](mailto:E20CSE157@bennett.edu.in)
+[Udyan Sharma](https://github.com/udyan2)
+Email: [udyan2@gamil.com](mailto:udyan2@gamil.com)
 
-[Yash Sharma](https://github.com/yashsharma1702)
-Email: [E20CSE158@bennett.edu.in](mailto:E20CSE158@bennett.edu.in)
+[Aditi Sheemar](https://github.com/yashsharma1702)
+Email: [aditiramen69@gmail.com](mailto:aditiramen69@gmail.com)
 
 
 ## Visitors Count
 
-<img align="left" src = "https://profile-counter.glitch.me/InnoAppChallenge/count.svg" alt ="Loading">
+<img align="left" src = "https://profile-counter.glitch.me/aadharAddressUpdate/count.svg" alt ="Loading">
