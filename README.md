@@ -1,7 +1,7 @@
 # InnoAppChallenge
 
 
-## Update Your Address [![GitHub stars](https://img.shields.io/github/stars/AkshatRastogi-1nC0re/aadharAddressUpdate?style=social)](https://github.com/login?return_to=%2FAkshatRastogi-1nC0re%aadharAddressUpdate) ![GitHub forks](https://img.shields.io/github/forks/AkshatRastogi-1nC0re/aadharAddressUpdate?style=social) ![GitHub last commit](https://img.shields.io/github/last-commit/AkshatRastogi-1nC0re/aadharAddressUpdate) ![Dart CI](https://github.com/TheAlphamerc/flutter_ecommerce_app/workflows/Dart%20CI/badge.svg) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com//AkshatRastogi-1nC0re/aadharAddressUpdate) 
+## Bennett Hub App [![GitHub stars](https://img.shields.io/github/stars/AkshatRastogi-1nC0re/InnoAppChallenge?style=social)](https://github.com/login?return_to=%2FAkshatRastogi-1nC0re%InnoAppChallenge) ![GitHub forks](https://img.shields.io/github/forks/AkshatRastogi-1nC0re/InnoAppChallenge?style=social) ![GitHub last commit](https://img.shields.io/github/last-commit/AkshatRastogi-1nC0re/InnoAppChallenge) ![Dart CI](https://github.com/TheAlphamerc/flutter_ecommerce_app/workflows/Dart%20CI/badge.svg) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com//AkshatRastogi-1nC0re/InnoAppChallenge) 
 
 Bennett Hub is a social media application exclusively designed for the students of Bennett University. This application would be a blessing for many who want to expand their social circle and make new friends including their batchmates, students from different courses, their seniors, their juniors basically all who are part of the university.
 
@@ -42,19 +42,16 @@ Firebase
 
 ## Created & Maintained By
 
-[Aryan Solanki](https://github.com/Aryan-Solanki)
-Email: [solankiaryan5@gmail.com](mailto:solankiaryan5@gmail.com)
-
 [Akshat Rastogi](https://github.com/AkshatRastogi-1nC0re)
 Email: [E20CSE003@bennett.edu.in](mailto:E20CSE003@bennett.edu.in)
 
-[Udyan Sharma](https://github.com/udyan2)
-Email: [udyan2@gamil.com](mailto:udyan2@gamil.com)
+[Aryan Solanki](https://github.com/Aryan-Solanki)
+Email: [E20CSE157@bennett.edu.in](mailto:E20CSE157@bennett.edu.in)
 
-[Aditi Sheemar](https://github.com/yashsharma1702)
-Email: [aditiramen69@gmail.com](mailto:aditiramen69@gmail.com)
+[Yash Sharma](https://github.com/yashsharma1702)
+Email: [E20CSE158@bennett.edu.in](mailto:E20CSE158@bennett.edu.in)
 
 
 ## Visitors Count
 
-<img align="left" src = "https://profile-counter.glitch.me/aadharAddressUpdate/count.svg" alt ="Loading">
+<img align="left" src = "https://profile-counter.glitch.me/InnoAppChallenge/count.svg" alt ="Loading">
